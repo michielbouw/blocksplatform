@@ -1,5 +1,5 @@
 .facebook {
-   background-image: url(data: image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMSAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcuMzYyIDguMzY3bC0uMDM0LTIuMjI1cy0uMjQ0LTEuMzkxIDEuMzU1LTEuMzkxbDIuMjI1LjAzNXYtMy45OTloLTMuNDc2cy00LjkwMy0uMjQ0LTQuOTAzIDQuNzY0djIuNzgybC0yLjQuMDM0djMuOTY1bDIuMzk5LjAzNHYxMS42MDVsNC44MzEuMDA3LjAwNS0xMS41NzcgMy4xOTctLjAwMi4zODItMy45OTctMy41ODEtLjAzNXoiLz48L3N2Zz4=);
+   background-image: url("../svg/facebook.svg");
    background-repeat: no-repeat;
    background-position: 50% 0;
    background-size: auto auto;
@@ -10,7 +10,7 @@
    background-origin: content-box
 }
 .twitter {
-   background-image: url(data: image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNyAyMiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI2LjQ0MSAyLjg2Yy0xLjY4Mi44NjUtMy4xMjMuODUtMy4xMjMuODVzMS44NDItMS4wMSAyLjM4Ny0yLjk5NmMtMi4yNDIgMS4yODItMy40NzcgMS4zMTMtMy40NzcgMS4zMTNzLTIuNDM1LTIuODgzLTYuMzI2LTEuMjMzYy00LjAyMSAxLjg0Mi0zLjAxMiA2LjIxNi0zLjAxMiA2LjIxNnMtNi40MjMuMjQtMTEuMjkzLTUuNzE5Yy0yLjM3NCA0LjUwNCAxLjYzNCA3LjI3MSAxLjYzNCA3LjI3MXMtMS4wODkuMTI5LTIuNDM1LS42NGMuMjg5IDQuNDg1IDMuOTA5IDUuNDQ3IDQuMzU3IDUuNDE1LTEuMzc3LjM4NC0yLjQwMy4xNi0yLjQwMy4xNnMxLjA4OSAzLjcxNiA1LjA2MiAzLjcxNmMtNC4wMDUgMy4yMzYtOC4wNDIgMi4zMDctOC4wNDIgMi4zMDdzOC4wMDkgNS44MzEgMTcuMTQtLjE2YzcuNjU3LTUuMjU0IDYuNzU5LTEzLjY0NyA2Ljc1OS0xMy42NDdzMS42MzYtMS4wMjYgMi43NzItMi44NTN6Ii8+PC9zdmc+);
+   background-image: url("../svg/twitter.svg");
    background-repeat: no-repeat;
    background-position: 50% 50%;
    background-size: auto auto;
@@ -21,7 +21,7 @@
    background-origin: content-box
 }
 .linkedin {
-   background-image: url(data: image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyMyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEuMjc0IDIzLjAwNWg0LjcxOHYtMTUuNTI2aC00LjcxOHYxNS41MjZ6bTIuMzktMjMuMDFjLTEuNjE0IDAtMi42NjkgMS4xNTktMi42NjkgMi42ODIgMCAxLjQ5MSAxLjAyNCAyLjY4NCAyLjYwNyAyLjY4NGguMDMxYzEuNjQ1IDAgMi42NjktMS4xOTIgMi42NjktMi42ODQtLjAzMS0xLjUyMy0xLjAyNC0yLjY4Mi0yLjYzOC0yLjY4MnptMTMuOTA5IDcuMTE5Yy0yLjUwNyAwLTMuNjI2IDEuNTA5LTQuMjUzIDIuNTY2di4wNWgtLjAzMWwuMDMxLS4wNXYtMi4yMDFoLTQuNzE3Yy4wNjIgMS40NTcgMCAxNS41MjUgMCAxNS41MjVoNC43MTh2LTguNjcxYzAtLjQ2NC4wMzEtLjkyNy4xNTYtMS4yNTkuMzQxLS45MjcgMS4xMTctMS44ODcgMi40Mi0xLjg4NyAxLjcwOCAwIDIuMzkxIDEuNDI0IDIuMzkxIDMuNTF2OC4zMDdoNC43MTh2LTguOTAyYy0uMDAxLTQuNzY4LTIuMzI4LTYuOTg4LTUuNDMzLTYuOTg4eiIvPjwvc3ZnPg==);
+   background-image: url("../svg/linkedin.svg");
    background-repeat: no-repeat;
    background-position: 50% 45%;
    background-size: auto auto;
@@ -32,7 +32,7 @@
    background-origin: content-box
 }
 .contact {
-   background-image: url(data: image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOCAxOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjggMTgiPjxnIGZpbGw9IiNGQUZBRjYiPjxwYXRoIGQ9Ik0yNi43NDMgMGgtMjUuNDg5Yy0uNyAwLTEuMjY4LjU2Ny0xLjI2OCAxLjI2OHYuOTQzbDEyLjc1NyAxMC4yMzljLjY5NC42OTQgMS44MTguNjk0IDIuNTE0IDBsMTIuNzU2LTEwLjIzOXYtLjk0M2MwLS43MDEtLjU2OS0xLjI2OC0xLjI3LTEuMjY4eiIvPjxwYXRoIGQ9Ik0yMi4yMzcgNy45MTdsMy43NiA4LjE3MS01LjEyNS03LjAyOS01LjYxNSA0LjY5M2MtLjY5NS42OTEtMS44MTkuNjkxLTIuNTE0IDBsLTUuNjI1LTQuNzAzLTUuMTMzIDcuMDM5IDMuNzY2LTguMTgxLTUuNzY0LTQuODE2djEzLjY3OWMwIC43MDIuNTY3IDEuMjcgMS4yNjggMS4yN2gyNS40ODljLjcwMSAwIDEuMjctLjU2NyAxLjI3LTEuMjd2LTEzLjY3OWwtNS43NzcgNC44MjZ6Ii8+PC9nPjwvc3ZnPg==);
+   background-image: url("../svg/contact.svg");
    background-repeat: no-repeat;
    background-position: 50% 50%;
    background-size: auto auto;
@@ -42,8 +42,8 @@
    -o-background-origin: content-box;
    background-origin: content-box
 }
-.page-foot div: after,.logo: before {
-   background-image: url(data: image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAgNTAiPjxwYXRoIGZpbGw9IiNkNjM3MzciIGQ9Ik0yNSAwYy0xMy44MDcgMC0yNSAxMS4xOTMtMjUgMjUgMCA1LjU1OSAxLjgxNyAxMC42OTIgNC44ODYgMTQuODQ1bDIyLjE3Ni0yMi4xOTdoLTkuMTA5Yy02LjEwNyAwLTUuNjM3LTguMDI3LTUuNjM3LTguMDI3aDE0LjcyN2MxMy43MDUgMCAxMy43MDUgMTMuMjk3IDEzLjcwNSAxMy4yOTd2MTUuMTk1Yy04LjEyOSAwLTcuOTY3LTQuOTYzLTcuOTY3LTQuOTYzdi05LjgyNGwtMjIuMTcyIDIyLjExMWM0LjA3IDIuODcxIDkuMDMyIDQuNTYzIDE0LjM5MSA0LjU2MyAxMy44MDcgMCAyNS0xMS4xOTMgMjUtMjVzLTExLjE5My0yNS0yNS0yNXoiLz48L3N2Zz4=);
+.page-head .logo:before, .page-foot div:after {
+   background-image: url("../images/logo.png");
    background-repeat: no-repeat;
    background-position: 0 0;
    background-size: auto 100%;

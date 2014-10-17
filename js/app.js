@@ -1,5 +1,5 @@
 var siteConfig;
-var sitePath = "/london-2013";
+var sitePath = "/";
 jQuery(function ($) {
    $.getJSON(sitePath + "/json/config.json", function (data) {
       siteConfig = data;

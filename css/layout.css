@@ -1,5 +1,6 @@
 @charset "UTF-8";
-   .cf, .nav-list, .grid {
+
+.cf, .nav-list, .grid {
    zoom: 1;
 }
 .cf:before, .nav-list:before, .grid:before, .cf:after, .nav-list:after, .grid:after {
