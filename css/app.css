@@ -6,7 +6,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 audio,canvas,video {
    display: inline-block
 }
-audio: not([controls]) {
+audio:not([controls]) {
    display: none;
    height: 0
 }
@@ -21,10 +21,10 @@ html {
 body {
    margin: 0
 }
-a: focus {
+a:focus {
    outline: thin dotted
 }
-a: active,a: hover {
+a:active,a:hover {
    outline: 0
 }
 h1 {
@@ -73,7 +73,7 @@ sub {
 img {
    border: 0
 }
-svg: not(: root) {
+svg:not(:root) {
    overflow: hidden
 }
 figure {
@@ -113,10 +113,10 @@ input[type="search"] {
    -webkit-box-sizing: content-box;
    box-sizing: content-box
 }
-input[type="search"]: : -webkit-search-cancel-button,input[type="search"]: : -webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
    -webkit-appearance: none
 }
-button: : -moz-focus-inner,input: : -moz-focus-inner {
+button::-moz-focus-inner,input::-moz-focus-inner {
    border: 0;
    padding: 0
 }
@@ -154,18 +154,18 @@ img {
 label,input,textarea,button,select,option {
    cursor: pointer
 }
-.text-input: active,.text-input: focus,textarea: active,textarea: focus {
+.text-input:active,.text-input:focus,textarea:active,textarea:focus {
    cursor: text;
    outline: none
 }
 .cf,.nav-list,.grid,.overlay .description .header,.overlay .bio .header,.extend,.page-head,.schedule-nav,.grid.page-general .grid-item.s,.page-general section.photos,.page-general section.location-media,.page-schedule,.page-schedule .schedule-list .wrap,.page-partners .user-card .wrap,.page-partners .partner-list li,.page-workshops .workshop-list,.page-home .speakers ol {
    zoom: 1
 }
-.cf: before,.nav-list: before,.grid: before,.overlay .description .header: before,.overlay .bio .header: before,.extend: before,.page-head: before,.schedule-nav: before,.grid.page-general .grid-item.s: before,.page-general section.photos: before,.page-general section.location-media: before,.page-schedule: before,.page-schedule .schedule-list .wrap: before,.page-partners .user-card .wrap: before,.page-partners .partner-list li: before,.page-workshops .workshop-list: before,.page-home .speakers ol: before,.cf: after,.nav-list: after,.grid: after,.overlay .description .header: after,.overlay .bio .header: after,.extend: after,.page-head: after,.schedule-nav: after,.grid.page-general .grid-item.s: after,.page-general section.photos: after,.page-general section.location-media: after,.page-schedule: after,.page-schedule .schedule-list .wrap: after,.page-partners .user-card .wrap: after,.page-partners .partner-list li: after,.page-workshops .workshop-list: after,.page-home .speakers ol: after {
+.cf:before,.nav-list:before,.grid:before,.overlay .description .header:before,.overlay .bio .header:before,.extend:before,.page-head:before,.schedule-nav:before,.grid.page-general .grid-item.s:before,.page-general section.photos:before,.page-general section.location-media:before,.page-schedule:before,.page-schedule .schedule-list .wrap:before,.page-partners .user-card .wrap:before,.page-partners .partner-list li:before,.page-workshops .workshop-list:before,.page-home .speakers ol:before,.cf:after,.nav-list:after,.grid:after,.overlay .description .header:after,.overlay .bio .header:after,.extend:after,.page-head:after,.schedule-nav:after,.grid.page-general .grid-item.s:after,.page-general section.photos:after,.page-general section.location-media:after,.page-schedule:after,.page-schedule .schedule-list .wrap:after,.page-partners .user-card .wrap:after,.page-partners .partner-list li:after,.page-workshops .workshop-list:after,.page-home .speakers ol:after {
    content: " ";
    display: table
 }
-.cf: after,.nav-list: after,.grid: after,.overlay .description .header: after,.overlay .bio .header: after,.extend: after,.page-head: after,.schedule-nav: after,.grid.page-general .grid-item.s: after,.page-general section.photos: after,.page-general section.location-media: after,.page-schedule: after,.page-schedule .schedule-list .wrap: after,.page-partners .user-card .wrap: after,.page-partners .partner-list li: after,.page-workshops .workshop-list: after,.page-home .speakers ol: after {
+.cf:after,.nav-list:after,.grid:after,.overlay .description .header:after,.overlay .bio .header:after,.extend:after,.page-head:after,.schedule-nav:after,.grid.page-general .grid-item.s:after,.page-general section.photos:after,.page-general section.location-media:after,.page-schedule:after,.page-schedule .schedule-list .wrap:after,.page-partners .user-card .wrap:after,.page-partners .partner-list li:after,.page-workshops .workshop-list:after,.page-home .speakers ol:after {
    clear: both
 }
 .nav-list {
@@ -182,7 +182,7 @@ label,input,textarea,button,select,option {
    -o-transition: color,border .2s ease-in;
    transition: color,border .2s ease-in
 }
-.nav-list li > a: hover {
+.nav-list li > a:hover {
    color: #d63737
 }
 .grid .grid-item {
@@ -345,7 +345,7 @@ canvas {
    background-color: #a18e5c;
    color: #fff
 }
-.contact-newsletter form button: hover {
+.contact-newsletter form button:hover {
    background-color: #2b2b2b
 }
 .contact-newsletter form input,.contact-newsletter form textarea,.contact-newsletter form select {
@@ -380,7 +380,7 @@ canvas {
    text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
    letter-spacing: .2em
 }
-.page-head .nav-list li a: hover {
+.page-head .nav-list li a:hover {
    background-color: rgba(255,255,255,0.05);
    color: #d63737
 }
@@ -407,7 +407,7 @@ canvas {
    width: 29px;
    height: 29px
 }
-.page-head .logo: before {
+.page-head .logo:before {
    content: '';
    width: 29px;
    height: 29px;
@@ -455,14 +455,14 @@ canvas {
 .page-head .register > img {
    display: none
 }
-.page-head .register: hover {
+.page-head .register:hover {
    background-color: #a18e5c
 }
 body.register .page-head .register {
    background-color: #a18e5c;
    color: #fff
 }
-body.register .page-head .register: hover {
+body.register .page-head .register:hover {
    background-color: #2b2b2b;
    color: #fff
 }
@@ -477,7 +477,7 @@ body.register .page-head .register: hover {
    background-color: #2b2b2b;
    color: #fff
 }
-.schedule-nav li: nth-child(3n+3) {
+.schedule-nav li:nth-child(3n+3) {
    padding: 1px 0 0 0
 }
 .schedule-nav li {
@@ -504,7 +504,7 @@ body.register .page-head .register: hover {
    font-style: normal;
    display: block
 }
-.schedule-nav li a: hover {
+.schedule-nav li a:hover {
    background-color: #2b2b2b;
    color: #fff
 }
@@ -512,10 +512,10 @@ body.register .page-head .register: hover {
    padding-top: 1.6em
 }
 .grid.page-general .grid-item.s {
-   padding-top: .625em
+   padding-top: .3125em;
 }
 .page-general {
-   padding: 0 .625em
+   padding: 0 .625em;
 }
 .page-general .price.super {
    background-color: #a18e5c;
@@ -587,7 +587,10 @@ body.register .page-head .register: hover {
    margin-top: .625em;
    padding: .5em 1em 2em 1em
 }
-.page-general section: nth-child(even) {
+.page-general section:nth-child(1) {
+   margin-top: 0;
+}
+.page-general section:nth-child(even) {
    background-color: #fff
 }
 .page-general section h2 {
@@ -635,7 +638,7 @@ body.register .page-head .register: hover {
 .page-general section a {
    color: #d63737
 }
-.page-general section a: hover {
+.page-general section a:hover {
    color: #2b2b2b
 }
 .page-general section.points {
@@ -671,15 +674,8 @@ body.register .page-head .register: hover {
    right: 0;
    bottom: 0
 }
-.page-general .amiando {
-   text-align: center;
-   min-height: 450px;
-   background-image: url(../images/loading.png);
-   background-repeat: no-repeat;
-   background-position: 50% 50%
-}
 
-.page-general .testimonial: last-child {
+.page-general .testimonial:last-child {
    border-left: .3125em solid #fafaf6;
    border-right: none
 }
@@ -812,16 +808,16 @@ body.register .page-head .register: hover {
 .page-schedule .schedule-list .closed {
    cursor: pointer
 }
-.page-schedule .schedule-list .closed: hover .wrap {
+.page-schedule .schedule-list .closed:hover .wrap {
    background-color: #2b2b2b
 }
-.page-schedule .schedule-list .closed: hover .wrap .detail .time,.page-schedule .schedule-list .closed: hover .wrap .detail .summary,.page-schedule .schedule-list .closed: hover .wrap .detail .speaker {
+.page-schedule .schedule-list .closed:hover .wrap .detail .time,.page-schedule .schedule-list .closed:hover .wrap .detail .summary,.page-schedule .schedule-list .closed:hover .wrap .detail .speaker {
    text-shadow: none
 }
-.page-schedule .schedule-list .closed: hover .wrap .detail .summary {
+.page-schedule .schedule-list .closed:hover .wrap .detail .summary {
    color: #fff
 }
-.page-schedule .schedule-list .closed: hover .wrap .detail .speaker: hover {
+.page-schedule .schedule-list .closed:hover .wrap .detail .speaker:hover {
    color: #fff
 }
 .page-schedule .schedule-list .open .wrap {
@@ -836,7 +832,7 @@ body.register .page-head .register: hover {
 .page-schedule .schedule-list .open .wrap .detail .summary {
    color: #fff
 }
-.page-schedule .schedule-list .open .wrap .detail .speaker: hover {
+.page-schedule .schedule-list .open .wrap .detail .speaker:hover {
    color: #fff
 }
 .page-schedule .schedule-list .open .wrap .description {
@@ -886,7 +882,7 @@ body.register .page-head .register: hover {
    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
    float: left
 }
-.page-schedule .schedule-list .wrap .detail .speaker: hover {
+.page-schedule .schedule-list .wrap .detail .speaker:hover {
    color: #2b2b2b
 }
 .page-schedule .schedule-list .wrap .detail .announced {
@@ -911,13 +907,13 @@ body.register .page-head .register: hover {
 .page-schedule .schedule-list .description p a {
    color: #d63737
 }
-.page-schedule .schedule-list .description p a: hover {
+.page-schedule .schedule-list .description p a:hover {
    color: #2b2b2b
 }
 .page-schedule .schedule-list .description a {
    color: #2b2b2b
 }
-.page-schedule .schedule-list .description a: hover {
+.page-schedule .schedule-list .description a:hover {
    color: #d63737
 }
 .page-schedule .schedule-list .description h3 {
@@ -1096,7 +1092,7 @@ body.register .page-head .register: hover {
 .page-partners .user-card .description a {
    color: #d63737
 }
-.page-partners .user-card .description a: hover {
+.page-partners .user-card .description a:hover {
    color: #2b2b2b
 }
 .page-partners .partner-list {
@@ -1132,7 +1128,7 @@ body.register .page-head .register: hover {
 .page-partners .partner-list h3 a {
    color: #d63737
 }
-.page-partners .partner-list h3 a: hover {
+.page-partners .partner-list h3 a:hover {
    color: #2b2b2b
 }
 .page-partners .partner-list p {
@@ -1147,7 +1143,7 @@ body.register .page-head .register: hover {
 .page-partners .partner-list a {
    color: #d63737
 }
-.page-partners .partner-list a: hover {
+.page-partners .partner-list a:hover {
    color: #2b2b2b
 }
 .page-workshops .intro,.page-speakers .intro {
@@ -1170,10 +1166,10 @@ body.register .page-head .register: hover {
    position: relative;
    cursor: pointer
 }
-.page-workshops .workshop-list > li: hover,.page-workshops .speaker-list > li: hover,.page-speakers .workshop-list > li: hover,.page-speakers .speaker-list > li: hover {
+.page-workshops .workshop-list > li:hover,.page-workshops .speaker-list > li:hover,.page-speakers .workshop-list > li:hover,.page-speakers .speaker-list > li:hover {
    background-color: #2b2b2b
 }
-.page-workshops .workshop-list > li: hover .detail,.page-workshops .speaker-list > li: hover .detail,.page-speakers .workshop-list > li: hover .detail,.page-speakers .speaker-list > li: hover .detail {
+.page-workshops .workshop-list > li:hover .detail,.page-workshops .speaker-list > li:hover .detail,.page-speakers .workshop-list > li:hover .detail,.page-speakers .speaker-list > li:hover .detail {
    color: #fff
 }
 .page-workshops .workshop-list > li .btn,.page-workshops .speaker-list > li .btn,.page-speakers .workshop-list > li .btn,.page-speakers .speaker-list > li .btn {
@@ -1246,7 +1242,7 @@ body.register .page-head .register: hover {
 .page-workshops .workshop-list .bio a,.page-workshops .speaker-list .bio a,.page-speakers .workshop-list .bio a,.page-speakers .speaker-list .bio a {
    color: #2b2b2b
 }
-.page-workshops .workshop-list .bio a: hover,.page-workshops .speaker-list .bio a: hover,.page-speakers .workshop-list .bio a: hover,.page-speakers .speaker-list .bio a: hover {
+.page-workshops .workshop-list .bio a:hover,.page-workshops .speaker-list .bio a:hover,.page-speakers .workshop-list .bio a:hover,.page-speakers .speaker-list .bio a:hover {
    color: #d63737
 }
 .page-workshops .workshop-list .bio h3,.page-workshops .speaker-list .bio h3,.page-speakers .workshop-list .bio h3,.page-speakers .speaker-list .bio h3 {
@@ -1378,7 +1374,7 @@ body.register .page-head .register: hover {
 .page-workshops .workshop-list .description a {
    color: #2b2b2b
 }
-.page-workshops .workshop-list .description a: hover {
+.page-workshops .workshop-list .description a:hover {
    color: #d63737
 }
 .page-workshops .workshop-list .description h3 {
@@ -1425,7 +1421,7 @@ body.register .page-head .register: hover {
    padding: .5em;
    height: 10em
 }
-.page-home .adverts .ad .ad-details: hover {
+.page-home .adverts .ad .ad-details:hover {
    background-color: #d5d4d1
 }
 .page-home .adverts .ad .ad-details h4 {
@@ -1448,10 +1444,10 @@ body.register .page-head .register: hover {
 .page-home .adverts .hand-picked-speakers .ad-details {
    background-color: #2b2b2b
 }
-.page-home .adverts .hand-picked-speakers .ad-details: hover {
+.page-home .adverts .hand-picked-speakers .ad-details:hover {
    background-color: #E7E5E1
 }
-.page-home .adverts .hand-picked-speakers .ad-details: hover h4 {
+.page-home .adverts .hand-picked-speakers .ad-details:hover h4 {
    color: #a18e5c
 }
 .page-home .adverts .hand-picked-speakers .ad-details h4 {
@@ -1475,7 +1471,7 @@ body.register .page-head .register: hover {
    cursor: pointer;
    float: left
 }
-.page-home .speakers ol li: hover .speaker-detail {
+.page-home .speakers ol li:hover .speaker-detail {
    display: block;
    background-color: rgba(0,0,0,0.6)
 }
@@ -1563,7 +1559,7 @@ body.register .page-head .register: hover {
    padding: .7em .5em;
    text-transform: uppercase
 }
-.page-foot div .links li a: hover {
+.page-foot div .links li a:hover {
    background-color: #2b2b2b
 }
 .page-foot div .links li .newsletter {
@@ -1598,16 +1594,16 @@ body.register .page-head .register: hover {
    text-indent: 200%;
    padding: 8px
 }
-.page-foot div .social li a: hover {
+.page-foot div .social li a:hover {
    background-color: #b4aea3
 }
-.page-foot div .social li .twitter: hover {
+.page-foot div .social li .twitter:hover {
    background-color: #00adef
 }
-.page-foot div .social li .facebook: hover {
+.page-foot div .social li .facebook:hover {
    background-color: #3b5998
 }
-.page-foot div .social li .linkedin: hover {
+.page-foot div .social li .linkedin:hover {
    background-color: #71c5ef
 }
 .page-foot div > a {
@@ -1648,10 +1644,10 @@ body.register .page-head .register: hover {
 }
 
 }
-.js .page-workshops .workshop-list .closed .bio,.js .page-speakers .speaker-list .closed .bio {
+.page-workshops .workshop-list .closed .bio,.page-speakers .speaker-list .closed .bio {
    display: none
 }
-.js .page-workshops .workshop-list .closed .description,.js .page-schedule .schedule-list .closed .description {
+.page-workshops .workshop-list .closed .description,.page-schedule .schedule-list .closed .description {
    display: none
 }
 .animated {
