@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-.cf, .nav-list, .grid {
+.nav-list, .grid {
    zoom: 1;
 }
-.cf:before, .nav-list:before, .grid:before, .cf:after, .nav-list:after, .grid:after {
+.nav-list:before, .grid:before, .nav-list:after, .grid:after {
    content: " ";
    display: table;
 }
-.cf:after, .nav-list:after, .grid:after {
+.nav-list:after, .grid:after {
    clear: both;
 }
 .nav-list {
@@ -30,7 +30,7 @@
 .grid .grid-item {
 }
 @media only screen and (min-width:23em) {
-   .page-foot div .links li a {
+.page-foot div .links li a {
    font-size: 20px;
    font-size: 1.25rem;
    line-height: 1.2;
@@ -41,25 +41,15 @@
    line-height: 1.44;
    line-height: 1.1em;
 }
-.page-head .register .reg-head {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.1em;
-   margin-top: 0;
 }
-.page-head .register .reg-sub {
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1em;
-}
-}@media only screen and (min-device-width:20em) and (max-device-width:30em) {
-   .wrapper {
+
+@media only screen and (min-device-width:20em) and (max-device-width:30em) {
+.wrapper {
    padding-bottom: 8.1em;
 }
 .page-head .register {
-   width: 34.33%}
+   width: 34.33%
+}
 .page-head .register .reg-head {
    margin-top: .1em;
    font-size: 18px;
@@ -68,64 +58,10 @@
    line-height: 1.1em;
 }
 .page-head .register .reg-sub {
-   font-size: 9px;
-   font-size: .5625rem;
-   line-height: 2.66667;
-   line-height: 1em;
-}
-.schedule-nav li a {
-   padding: 1.1em 0 0 1em;
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1em;
-}
-.page-partners .user-card img {
-   width: 17%}
-.contact-newsletter form {
-   padding: .5em;
-}
-.contact-newsletter form header .details {
-   margin-top: -12px;
-}
-.contact-newsletter form header .details span {
-   font-size: 9px;
-   font-size: .5625rem;
-   line-height: 2.66667;
-   line-height: 1.1em;
-}
-.contact-newsletter form header h2 {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.1em;
-}
-.contact-newsletter form input {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-}
-.contact-newsletter form textarea {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-}
-.contact-newsletter form button {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-}
-.contact-newsletter form .wrap {
-   padding: 1em 1em .2em 1em;
-}
-.page-partners h1 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.6em;
+    font-size: 9px;
+    font-size: .5625rem;
+    line-height: 2.66667;
+    line-height: 1em;
 }
 .page-general {
 }
@@ -189,61 +125,6 @@
    line-height: 1.84615;
    line-height: 1.3em;
 }
-.page-workshops .workshop-list li h3 {
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li h4 {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list .description p {
-   line-height: 1.3em;
-}
-.page-workshops .workshop-list .description h3 {
-   font-size: 16px;
-   font-size: 1rem;
-   line-height: 1.5;
-}
-.page-workshops .workshop-list .description ul li {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .wrap img {
-   width: 22%}
-.page-schedule .schedule-list .wrap .detail {
-   float: left;
-   width: 70%}
-.page-schedule .schedule-list .wrap .detail .time {
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .wrap .detail .summary {
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .wrap .detail .speaker {
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .btn {
-   right: .3125em;
-   height: 14px;
-   width: 14px;
-   margin-top: -6px;
-}
 .grid .intro {
    min-height: 13.5em;
 }
@@ -261,31 +142,6 @@
 }
 .grid .intro h3 {
    letter-spacing: .1em;
-}
-.page-workshops .intro, .page-speakers .intro {
-   min-height: 0;
-}
-.page-workshops .workshop-list .detail, .page-workshops .speaker-list .detail, .page-speakers .workshop-list .detail, .page-speakers .speaker-list .detail {
-   margin-top: -14px;
-}
-.page-workshops .workshop-list h2, .page-workshops .speaker-list h2, .page-speakers .workshop-list h2, .page-speakers .speaker-list h2 {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list .company, .page-workshops .speaker-list .company, .page-speakers .workshop-list .company, .page-speakers .speaker-list .company {
-   display: block;
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li .btn, .page-workshops .speaker-list li .btn, .page-speakers .workshop-list li .btn, .page-speakers .speaker-list li .btn {
-   right: .3125em;
-   height: 14px;
-   width: 14px;
-   margin-top: -6px;
 }
 .page-home .adverts .ad .ad-details {
    height: 9em;
@@ -325,8 +181,10 @@
    line-height: 1.3em;
    margin: 2.4em 0 0 1.5em;
 }
-}@media only screen and (min-width:30.1em) {
-   .wrapper {
+}
+
+@media only screen and (min-width:30.1em) {
+.wrapper {
    padding-bottom: 10.8em;
 }
 .page-head {
@@ -353,7 +211,7 @@
    height: 51px;
 }
 .page-head .register {
-   padding: 1.6em 0;
+   padding: 0;
 }
 .page-head .register .reg-head {
    font-size: 30px;
@@ -367,48 +225,6 @@
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1em;
-}
-.contact-newsletter form {
-   padding: 1em;
-}
-.contact-newsletter form header .details {
-   margin-top: -19px;
-}
-.contact-newsletter form header .details span {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.1em;
-}
-.contact-newsletter form header h2 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.1em;
-}
-.contact-newsletter form header img {
-   padding: 1.5em;
-}
-.contact-newsletter form input {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.6em;
-}
-.contact-newsletter form textarea {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.6em;
-}
-.contact-newsletter form button {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.6em;
-}
-.contact-newsletter form .wrap {
-   padding: 1.5em 1.5em .3em 1.5em;
 }
 .page-general h1 {
    font-size: 35px;
@@ -479,37 +295,6 @@
    line-height: 1.2;
    line-height: 1.3em;
 }
-.page-schedule .schedule-list .wrap .detail {
-   padding: .625em;
-}
-.page-schedule .schedule-list .wrap .detail .time {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
-.page-schedule .schedule-list .wrap .detail .summary {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-   overflow: auto;
-   text-overflow: string;
-   white-space: normal;
-}
-.page-schedule .schedule-list .wrap .detail .speaker {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
-.schedule-nav li a {
-   padding: 1.1em 0 0 1em;
-   font-size: 17px;
-   font-size: 1.0625rem;
-   line-height: 1.41176;
-   line-height: 1em;
-}
 .grid .intro {
    min-height: 17.2em;
 }
@@ -532,147 +317,6 @@
    line-height: 1.5em;
    letter-spacing: .2em;
    max-width: 30em;
-}
-.page-partners .user-card .detail {
-   padding: .625em;
-}
-.page-partners .user-card h4 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
-.page-partners .user-card h5 {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.2em;
-}
-.page-partners .user-card .description {
-   padding: 1em 1em .5em 1em;
-}
-.page-partners .user-card .description p {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-}
-.page-partners .partner-list img {
-   width: 5em;
-   top: 1em;
-   left: 1em;
-}
-.page-partners .partner-list .details {
-   padding: 1em;
-}
-.page-partners .partner-list h3 {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.5em;
-   text-indent: 5.5em;
-   margin-top: 1.5em;
-}
-.page-partners .partner-list p {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-   margin-top: 2.5em;
-}
-.page-workshops h1 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.2em;
-}
-.page-workshops h2 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li h3 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li h4 {
-   font-size: 17px;
-   font-size: 1.0625rem;
-   line-height: 1.41176;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li .btn {
-   right: .3125em;
-   height: 24px;
-   width: 24px;
-   margin-top: -9px;
-}
-.page-workshops .workshop-list li .detail {
-   width: 60%}
-.page-workshops .workshop-list .description p {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-}
-.page-workshops .workshop-list .description h3 {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-}
-.page-workshops .workshop-list .description ul li {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.3em;
-}
-.page-speakers .intro {
-   min-height: 0;
-}
-.page-speakers .speaker-list li .btn {
-   right: .625em;
-   height: 30px;
-   width: 30px;
-   margin-top: -15px;
-}
-.page-speakers .speaker-list .detail {
-   margin-top: -29px;
-}
-.page-speakers .speaker-list h2 {
-   font-size: 25px;
-   font-size: 1.5625rem;
-   line-height: 1.92;
-   line-height: 1.2em;
-}
-.page-speakers .speaker-list .company {
-   display: block;
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.2em;
-}
-.page-speakers .speaker-list .bio {
-   padding: 1em 1em 3.5em 1em;
-}
-.page-speakers .speaker-list .bio p {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-}
-.page-speakers .speaker-list .bio a {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   padding-left: 2em;
-}
-.page-speakers .speaker-list .bio .links {
-   position: absolute;
-   bottom: 1em;
-   left: 1em;
 }
 .page-home .adverts .ad .ad-details {
    padding: .5em;
@@ -745,355 +389,17 @@
 
    padding: 8px;
 }
-}@media only screen and (min-width:48em) {
-   html {
+}
+
+@media only screen and (min-width:48em) {
+html {
    background-color: #fafaf6;
 }
 .wrapper {
    padding: 0 1em 4em 1em;
 }
-.overlay.overlay-workshop .description header .detail h2 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
 .page-head .nav-list li {
    float: left;
-}
-.overlay {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background-color: rgba(255, 255, 255, 0.8);
-   z-index: 5;
-   display: block;
-   min-height: 100%;
-   min-width: 100%;
-   cursor: pointer;
-   -webkit-transition: opacity .2s linear;
-   -moz-transition: opacity .2s linear;
-   -ms-transition: opacity .2s linear;
-   -o-transition: opacity .2s linear;
-   transition: opacity .2s linear;
-}
-.overlay .modal {
-   position: absolute;
-   z-index: 5;
-   top: 0;
-   left: 50%;
-   width: 40em;
-   background-color: #fff;
-   padding: 1em;
-   display: block;
-   cursor: default;
-   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   -ms-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   -o-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   -webkit-transition: opacity .35s ease;
-   -moz-transition: opacity .35s ease;
-   -ms-transition: opacity .35s ease;
-   -o-transition: opacity .35s ease;
-   transition: opacity .35s ease;
-   opacity: 0;
-}
-.overlay .description {
-   padding: 8.2em 1.5em 1em 1.5em;
-   display: block;
-   background-color: #f7f7f7;
-}
-.overlay .description header {
-   position: absolute;
-   top: 1em;
-   left: 1em;
-   background-color: #2b2b2b;
-   right: 1em;
-}
-.overlay .description header img {
-   width: 18%;
-   float: left;
-}
-.overlay .description header .detail {
-   float: left;
-   color: #fff;
-   font-family: "proxima-nova", sans-serif;
-   text-transform: uppercase;
-   padding: 1em;
-   width: 80%}
-.overlay .description header .detail h2 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1;
-   letter-spacing: auto;
-}
-.overlay .description header .detail span {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1;
-   letter-spacing: .2em;
-   color: #a18e5c;
-}
-.overlay .description header .detail span a {
-   font-size: inherit;
-   display: inline;
-   color: #d63737;
-   font-style: normal;
-   padding: 0;
-}
-.overlay .description header .detail span a:hover {
-   color: #fff;
-}
-.overlay .description p {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-   color: #666;
-   padding: 0;
-   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-   margin-bottom: 1em;
-}
-.overlay .description p a {
-   color: #d63737;
-}
-.overlay .description p a:hover {
-   color: #2b2b2b;
-}
-.overlay .description a {
-   color: #2b2b2b;
-}
-.overlay .description a:hover {
-   color: #d63737;
-}
-.overlay .description h3, .overlay .description h4 {
-   margin-bottom: .3em;
-   color: #666;
-}
-.overlay .description ul {
-   color: #666;
-   padding: 0 0 1em 1em;
-}
-.overlay .description ul li {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-}
-.overlay .bio {
-   padding: 8.2em 1.5em 3.6em 1.5em;
-   display: block;
-   background-color: #f7f7f7;
-}
-.overlay .bio header {
-   position: absolute;
-   top: 1em;
-   left: 1em;
-   background-color: #2b2b2b;
-   right: 1em;
-}
-.overlay .bio header img {
-   width: 18%;
-   float: left;
-}
-.overlay .bio header .detail {
-   float: left;
-   color: #fff;
-   font-family: "proxima-nova", sans-serif;
-   text-transform: uppercase;
-   padding: 2.3em 1em 1em 1em;
-   width: 80%}
-.overlay .bio header .detail h2 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1;
-   letter-spacing: .2em;
-}
-.overlay .bio header .detail .company {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1;
-   letter-spacing: .2em;
-}
-.overlay .bio p {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-   color: #666;
-   padding: 0;
-   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-   margin-bottom: 1em;
-}
-.overlay .bio a {
-   color: #2b2b2b;
-}
-.overlay .bio a:hover {
-   color: #d63737;
-}
-.overlay .bio .link, .overlay .bio .tweet {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   display: block;
-   padding-left: 2em;
-}
-.overlay .bio .links {
-   position: absolute;
-   bottom: 2.5em;
-   left: 2.5em;
-}
-.overlay .bio .link {
-   position: relative;
-   float: left;
-}
-.overlay .bio .tweet {
-   position: relative;
-   float: left;
-   margin-left: 2em;
-}
-.overlay form {
-   margin-bottom: -3em;
-}
-.overlay form header img {
-   padding: 1.5em;
-}
-.overlay form .wrap {
-   background-color: #f7f7f7;
-}
-.overlay form input {
-   border: 1px solid #d5d4d1;
-   display: block;
-   width: 80%;
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-   letter-spacing: .1em;
-   font-family: "museo-sans-rounded", sans-serif;
-   padding: .3125em;
-   font-weight: 400;
-   margin-bottom: 1.5em;
-   height: 3em;
-}
-.overlay form textarea {
-   border: 1px solid #d5d4d1;
-   display: block;
-   width: 100%;
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-   letter-spacing: .1em;
-   font-family: "museo-sans-rounded", sans-serif;
-   padding: .3125em;
-   font-weight: 400;
-   margin-bottom: 1.5em;
-   height: 8em;
-}
-.overlay form button {
-   display: block;
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   text-transform: uppercase;
-   padding: .625em 1em;
-   line-height: 1.6em;
-   letter-spacing: .1em;
-   font-family: "proxima-nova", sans-serif;
-   font-weight: 400;
-   margin-bottom: 1.5em;
-   border: none;
-   background-color: #a18e5c;
-   color: #fff;
-}
-.days-expand .page-schedule .grid-item {
-   width: 50%}
-.page-schedule {
-   padding: 0;
-}
-.page-schedule .grid-item {
-   float: left;
-   width: 33.33%}
-.page-schedule .grid-item h2, .page-schedule .grid-item h3 {
-   font-family: "proxima-nova", sans-serif;
-   text-transform: uppercase;
-   letter-spacing: .1em;
-}
-.page-schedule .grid-item h2 {
-   margin: .625em 0 0 0;
-   display: block;
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1;
-   font-weight: 700;
-}
-.page-schedule .grid-item h3 {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1;
-   font-weight: 600;
-   color: #666;
-}
-.page-schedule img {
-   width: 25%}
-.page-schedule .schedule-list {
-   list-style: none;
-   display: block;
-   padding: .4em 0 0 0;
-}
-.page-schedule .schedule-list li {
-   position: relative;
-   margin-top: .625em;
-}
-.page-schedule .schedule-list .wrap {
-   background-color: #e6e5e1;
-}
-.page-schedule .schedule-list .wrap .detail {
-   float: left;
-   width: 65%;
-   padding: .3125em;
-}
-.page-schedule .schedule-list .wrap .detail .time {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .wrap .detail .summary {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.4em;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
-}
-.page-schedule .schedule-list .wrap .detail .speaker {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .wrap .detail .speaker:hover {
-   color: #2b2b2b;
-}
-.page-schedule .schedule-list .wrap .btn {
-   right: .3125em;
-   height: 20px;
-   width: 20px;
-   margin-top: -8px;
-}
-.page-schedule .schedule-list .description {
-   display: none;
 }
 .page-head {
    background-color: transparent;
@@ -1163,6 +469,7 @@
    height: 51px;
    margin-top: -35px;
    padding-left: 0;
+   display: block;
 }
 .page-head .logo:before {
    width: 51px;
@@ -1217,56 +524,8 @@
 }
 .page-head .register > img {
    display: inline-block;
-}
-.schedule-nav {
-   padding: 3.125em 0;
-   margin: 0 auto;
-}
-.schedule-nav .current a:after {
-   content: '';
-   display: block;
-   width: 0;
-   height: 0;
-   border-left: .8em solid transparent;
-   border-right: .8em solid transparent;
-   border-top: .8em solid #2b2b2b;
-   position: absolute;
-   bottom: -.8em;
-   left: 50%;
-   margin-left: -.9em;
-}
-.schedule-nav li:nth-child(3n+3) {
-   padding: 0 .3125em;
-}
-.schedule-nav li {
-   display: inline-block;
-   width: 16.66%;
-   float: left;
-   padding: 0 .3125em;
-}
-.schedule-nav li a {
-   padding: 1.1em 0 0 .5em;
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1em;
-   position: relative;
-}
-.schedule-nav li a:hover:after {
-   content: '';
-   display: block;
-   width: 0;
-   height: 0;
-   border-left: .8em solid transparent;
-   border-right: .8em solid transparent;
-   border-top: .8em solid #2b2b2b;
-   position: absolute;
-   bottom: -.8em;
-   left: 50%;
-   margin-left: -.9em;
-}
-.schedule-nav li .workshops {
-   padding-top: 1.6em;
+   height: auto;
+   width: auto;
 }
 .grid .grid-item {
    padding: .3125em;
@@ -1351,124 +610,6 @@
 }
 .page-content .extend .sponsors-gold img {
    background-color: #a18e5c;
-}
-.page-workshops h1 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.2em;
-   margin: 0;
-   padding: 0 0 0 .3125em;
-}
-.page-workshops h2 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-   margin: 0;
-   padding: 0 0 1em .3125em;
-}
-.page-workshops .workshop-list li h3 {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li h4 {
-   font-size: 17px;
-   font-size: 1.0625rem;
-   line-height: 1.41176;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li .detail {
-   position: absolute;
-   left: auto;
-   top: 0;
-   margin-top: 0;
-   display: inline-block;
-   font-family: "proxima-nova", sans-serif;
-   color: #a18e5c;
-   text-transform: uppercase;
-   text-align: left;
-   width: 50%;
-   float: right;
-   padding: 1em;
-}
-.page-workshops .workshop-list .open .description {
-   display: none;
-}
-.page-workshops .workshop-list .description p {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-}
-.page-workshops .workshop-list .description h3 {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-}
-.page-workshops .workshop-list .description ul li {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.4em;
-}
-.contact-newsletter.page-general {
-   padding-top: .5em;
-}
-.grid.contact-newsletter.page-general .grid-item.m {
-   width: 50%;
-   float: right;
-}
-.grid.contact-newsletter.page-general .grid-item.s {
-   max-width: 50%;
-   width: 50%;
-   float: left;
-   padding: .3125em;
-   margin: 0;
-}
-.contact-newsletter form {
-   padding: .5em;
-}
-.contact-newsletter form header .details {
-   margin-top: -15px;
-}
-.contact-newsletter form header .details span {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.1em;
-}
-.contact-newsletter form header h2 {
-   font-size: 17px;
-   font-size: 1.0625rem;
-   line-height: 1.41176;
-   line-height: 1.1em;
-}
-.contact-newsletter form header img {
-   padding: 1em;
-}
-.contact-newsletter form .wrap {
-   padding: 1em 1em .2em 1em;
-}
-.contact-newsletter form input {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-}
-.contact-newsletter form textarea {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
-}
-.contact-newsletter form button {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.6em;
 }
 .grid.page-general .grid-item.m {
    max-width: 74.9%;
@@ -1573,216 +714,6 @@
    font-size: .6875rem;
    line-height: 2.18182;
    line-height: 1.3em;
-}
-.grid.page-partners .grid-item.partners {
-   max-width: 74.9%;
-   float: left;
-}
-.grid.page-partners .grid-item.contact {
-   width: 25.1%;
-   float: right;
-}
-.page-partners {
-   padding: 0;
-}
-.page-partners h1 {
-   line-height: 1;
-   display: block;
-   margin-top: .3125em;
-   margin-left: .1em;
-}
-.page-partners h2 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.5em;
-}
-.page-partners .user-card {
-   margin-top: 5.2em;
-}
-.page-partners .user-card img {
-   width: 28%;
-   float: left;
-}
-.page-partners .user-card .detail {
-   padding: .625em;
-}
-.page-partners .user-card h4 {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.2em;
-}
-.page-partners .user-card h5 {
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1.2em;
-}
-.page-partners .user-card .description p {
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1.6em;
-}
-.page-partners .partner-list img {
-   width: 32%;
-   position: static;
-   float: left;
-   max-width: 320px;
-}
-.page-partners .partner-list .details {
-   padding: .625em;
-   float: left;
-   width: 67%}
-.page-partners .partner-list h3 {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-   text-indent: 0;
-   margin-top: 0;
-}
-.page-partners .partner-list p {
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1.6em;
-   font-weight: 400;
-   margin-top: .5em;
-   color: #666;
-}
-.page-workshops .icon img, .page-speakers .icon img {
-   background-color: #d63737;
-}
-.page-workshops .intro, .page-speakers .intro {
-   min-height: 0;
-}
-.page-workshops .speakers, .page-speakers .speakers {
-   clear: both;
-   min-width: 100%;
-   padding: 0;
-}
-.page-workshops .workshop-list, .page-workshops .speaker-list, .page-speakers .workshop-list, .page-speakers .speaker-list {
-   min-width: 100%;
-   display: block;
-   list-style: none;
-   padding: 0;
-}
-.page-workshops .workshop-list > li:nth-child(4n+1) .wrap, .page-workshops .speaker-list > li:nth-child(4n+1) .wrap, .page-speakers .workshop-list > li:nth-child(4n+1) .wrap, .page-speakers .speaker-list > li:nth-child(4n+1) .wrap {
-   background-color: #fbebeb;
-}
-.page-workshops .workshop-list > li:nth-child(4n+1) .wrap .detail, .page-workshops .speaker-list > li:nth-child(4n+1) .wrap .detail, .page-speakers .workshop-list > li:nth-child(4n+1) .wrap .detail, .page-speakers .speaker-list > li:nth-child(4n+1) .wrap .detail {
-   color: #d63737;
-}
-.page-workshops .workshop-list > li:nth-of-type(4n+4) .wrap, .page-workshops .speaker-list > li:nth-of-type(4n+4) .wrap, .page-speakers .workshop-list > li:nth-of-type(4n+4) .wrap, .page-speakers .speaker-list > li:nth-of-type(4n+4) .wrap {
-   background-color: #fbebeb;
-}
-.page-workshops .workshop-list > li:nth-of-type(4n+4) .wrap .detail, .page-workshops .speaker-list > li:nth-of-type(4n+4) .wrap .detail, .page-speakers .workshop-list > li:nth-of-type(4n+4) .wrap .detail, .page-speakers .speaker-list > li:nth-of-type(4n+4) .wrap .detail {
-   color: #d63737;
-}
-.page-workshops .workshop-list > li, .page-workshops .speaker-list > li, .page-speakers .workshop-list > li, .page-speakers .speaker-list > li {
-   padding: .3125em;
-   width: 50%;
-   margin-top: 0;
-   background-color: transparent;
-   position: relative;
-   cursor: pointer;
-   float: left;
-}
-.page-workshops .workshop-list > li:hover, .page-workshops .speaker-list > li:hover, .page-speakers .workshop-list > li:hover, .page-speakers .speaker-list > li:hover {
-   background-color: transparent;
-}
-.page-workshops .workshop-list > li:hover .wrap, .page-workshops .speaker-list > li:hover .wrap, .page-speakers .workshop-list > li:hover .wrap, .page-speakers .speaker-list > li:hover .wrap {
-   background-color: #2b2b2b;
-}
-.page-workshops .workshop-list > li:hover .wrap .detail, .page-workshops .speaker-list > li:hover .wrap .detail, .page-speakers .workshop-list > li:hover .wrap .detail, .page-speakers .speaker-list > li:hover .wrap .detail {
-   color: #fff;
-}
-.page-workshops .workshop-list > li .btn, .page-workshops .speaker-list > li .btn, .page-speakers .workshop-list > li .btn, .page-speakers .speaker-list > li .btn {
-   display: none;
-}
-.page-workshops .workshop-list .closed .bio, .page-workshops .speaker-list .closed .bio, .page-speakers .workshop-list .closed .bio, .page-speakers .speaker-list .closed .bio {
-   display: none;
-}
-.page-workshops .workshop-list .open, .page-workshops .speaker-list .open, .page-speakers .workshop-list .open, .page-speakers .speaker-list .open {
-   background-color: transparent;
-}
-.page-workshops .workshop-list .open .wrap, .page-workshops .speaker-list .open .wrap, .page-speakers .workshop-list .open .wrap, .page-speakers .speaker-list .open .wrap {
-   background-color: #2b2b2b;
-}
-.page-workshops .workshop-list .open .wrap .detail, .page-workshops .speaker-list .open .wrap .detail, .page-speakers .workshop-list .open .wrap .detail, .page-speakers .speaker-list .open .wrap .detail {
-   color: #fff;
-}
-.page-workshops .workshop-list .open .bio, .page-workshops .speaker-list .open .bio, .page-speakers .workshop-list .open .bio, .page-speakers .speaker-list .open .bio {
-   display: none;
-}
-.page-workshops .workshop-list img, .page-workshops .speaker-list img, .page-speakers .workshop-list img, .page-speakers .speaker-list img {
-   width: 50%;
-   display: inline-block;
-}
-.page-workshops .workshop-list .wrap, .page-workshops .speaker-list .wrap, .page-speakers .workshop-list .wrap, .page-speakers .speaker-list .wrap {
-   display: block;
-   position: relative;
-   width: 100%;
-   background: #e1e0dc;
-}
-.page-workshops .workshop-list .detail, .page-workshops .speaker-list .detail, .page-speakers .workshop-list .detail, .page-speakers .speaker-list .detail {
-   position: absolute;
-   left: auto;
-   top: 50%;
-   margin-top: -13%;
-   display: inline-block;
-   font-family: "proxima-nova", sans-serif;
-   color: #a18e5c;
-   text-transform: uppercase;
-   text-align: center;
-   width: 50%;
-   padding: .5em;
-}
-.page-workshops .workshop-list h2, .page-workshops .speaker-list h2, .page-speakers .workshop-list h2, .page-speakers .speaker-list h2 {
-   display: block;
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list .company, .page-workshops .speaker-list .company, .page-speakers .workshop-list .company, .page-speakers .speaker-list .company {
-   display: block;
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.2em;
-   font-weight: 400;
-}
-.page-workshops .workshop-list .bio, .page-workshops .speaker-list .bio, .page-speakers .workshop-list .bio, .page-speakers .speaker-list .bio {
-   background-color: #fff;
-   border-bottom: 5px solid #2b2b2b;
-   padding: 1em 1em 5.5em 1em;
-}
-.page-workshops .workshop-list .bio p, .page-workshops .speaker-list .bio p, .page-speakers .workshop-list .bio p, .page-speakers .speaker-list .bio p {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.6em;
-}
-.page-workshops .workshop-list .bio a, .page-workshops .speaker-list .bio a, .page-speakers .workshop-list .bio a, .page-speakers .speaker-list .bio a {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   color: #2b2b2b;
-   display: block;
-   padding-left: 2em;
-}
-.page-workshops .workshop-list .bio .link, .page-workshops .speaker-list .bio .link, .page-speakers .workshop-list .bio .link, .page-speakers .speaker-list .bio .link {
-   position: absolute;
-   bottom: 3.5em;
-   left: 1em;
-}
-.page-workshops .workshop-list .bio .tweet, .page-workshops .speaker-list .bio .tweet, .page-speakers .workshop-list .bio .tweet, .page-speakers .speaker-list .bio .tweet {
-   position: absolute;
-   bottom: 1em;
-   left: 1em;
 }
 .page-home .icon img {
    background-color: #a18e5c;
@@ -2149,51 +1080,11 @@
    line-height: 1.3em;
    letter-spacing: .2em;
 }
-}@media only screen and (min-width:62.5em) {
-   .wrapper {
+}
+
+@media only screen and (min-width:62.5em) {
+.wrapper {
    padding-bottom: 5em;
-}
-.contact-newsletter form {
-   padding: 1em;
-}
-.contact-newsletter form header .details {
-   margin-top: -19px;
-}
-.contact-newsletter form header .details span {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.1em;
-}
-.contact-newsletter form header h2 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.1em;
-}
-.contact-newsletter form header img {
-   padding: 1.5em;
-}
-.contact-newsletter form input {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.6em;
-}
-.contact-newsletter form textarea {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.6em;
-}
-.contact-newsletter form button {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.6em;
-}
-.contact-newsletter form .wrap {
-   padding: 1.5em 1.5em .3em 1.5em;
 }
 .page-general {
 }
@@ -2302,48 +1193,6 @@
    line-height: 1.2em;
    margin-left: 7.4em;
 }
-.page-schedule img {
-   width: 23%}
-.page-schedule .grid-item h2 {
-   font-size: 23px;
-   font-size: 1.4375rem;
-   line-height: 1.04348;
-   line-height: 1;
-}
-.page-schedule .schedule-list .wrap .detail {
-   padding: .625em;
-}
-.page-schedule .schedule-list .wrap .detail .time {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.2em;
-}
-.page-schedule .schedule-list .wrap .detail .summary {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.4em;
-}
-.page-schedule .schedule-list .wrap .detail .speaker {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.2em;
-}
-.page-schedule .schedule-list .wrap .btn {
-   height: 24px;
-   width: 24px;
-   margin-top: -10px;
-}
-.schedule-nav li a {
-   padding: 1.1em 0 0 1em;
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1em;
-   position: relative;
-}
 .grid .intro {
    padding: 4.5em 0 0 2.5em;
 }
@@ -2365,122 +1214,6 @@
    line-height: 1.26316;
    letter-spacing: .1em;
    margin-top: 1em;
-}
-.page-partners h2 {
-   font-size: 25px;
-   font-size: 1.5625rem;
-   line-height: 1.92;
-   line-height: 1.5em;
-}
-.page-partners .user-card {
-   margin-top: 6.7em;
-}
-.page-partners .user-card img {
-   width: 28%;
-   float: left;
-}
-.page-partners .user-card h4 {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.2em;
-}
-.page-partners .user-card h5 {
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.2em;
-}
-.page-partners .user-card .description {
-   padding: 1em 1em 0 1em;
-}
-.page-partners .user-card .description p {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-   padding-bottom: 1em;
-}
-.page-partners .user-card .description a {
-   color: #d63737;
-}
-.page-partners .user-card .description a:hover {
-   color: #2b2b2b;
-}
-.page-partners .partner-list li {
-   margin-top: 1.25em;
-}
-.page-partners .partner-list img {
-   width: 32%;
-   position: static;
-   float: left;
-   max-width: 320px;
-}
-.page-partners .partner-list .details {
-   padding: 1em;
-   float: left;
-   width: 67%}
-.page-partners .partner-list h3 {
-   font-size: 23px;
-   font-size: 1.4375rem;
-   line-height: 1.04348;
-   line-height: 1.6em;
-   text-indent: 0;
-   margin-top: 0;
-}
-.page-partners .partner-list p {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.6em;
-   font-weight: 400;
-   margin-top: .3em;
-   color: #666;
-}
-.page-workshops h1 {
-   font-size: 25px;
-   font-size: 1.5625rem;
-   line-height: 1.92;
-   line-height: 1.2em;
-   margin: 0;
-   padding: 0 0 0 .3125em;
-}
-.page-workshops h2 {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.2em;
-   margin: 0;
-   padding: 0 0 1em .3125em;
-}
-.page-workshops .workshop-list li h3 {
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li h4 {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li .detail {
-   padding: 1.2em;
-}
-.page-speakers .speaker-list h2 {
-   font-size: 25px;
-   font-size: 1.5625rem;
-   line-height: 1.92;
-   line-height: 1.2em;
-   padding: 0 .5em;
-}
-.page-speakers .speaker-list .company {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.2em;
-   padding: 0 .5em;
 }
 .page-home .speakers ol .two .speaker-detail h3 {
    font-size: 15px;
@@ -2599,8 +1332,10 @@
    line-height: 1.3em;
    letter-spacing: .2em;
 }
-}@media only screen and (min-width:81.25em) {
-   .grid .intro h1 {
+}
+
+@media only screen and (min-width:81.25em) {
+.grid .intro h1 {
    font-size: 88px;
    font-size: 5.5rem;
    line-height: 1.09091;
@@ -2620,61 +1355,6 @@
    line-height: 1.09091;
    line-height: 1.3em;
    margin-top: 1em;
-}
-.page-partners .partner-list h3 {
-   font-size: 25px;
-   font-size: 1.5625rem;
-   line-height: 1.92;
-   line-height: 1.7em;
-   text-indent: 0;
-   margin-top: 0;
-}
-.page-partners .partner-list p {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.7em;
-}
-.page-schedule .schedule-list .wrap .detail .summary {
-   overflow: hidden;
-   text-overflow: string;
-   white-space: normal;
-   max-height: 40px;
-}
-.schedule-nav li a {
-   padding: 1.1em 0 0 1em;
-   font-size: 18px;
-   font-size: 1.125rem;
-   line-height: 1.33333;
-   line-height: 1em;
-   position: relative;
-}
-.page-speakers .speaker-list h2 {
-   font-size: 28px;
-   font-size: 1.75rem;
-   line-height: 1.71429;
-   line-height: 1.2em;
-}
-.page-speakers .speaker-list .company {
-   font-size: 23px;
-   font-size: 1.4375rem;
-   line-height: 1.04348;
-   line-height: 1.2em;
-}
-.page-workshops .workshop-list li h3 {
-   font-size: 23px;
-   font-size: 1.4375rem;
-   line-height: 1.04348;
-   line-height: 1.3em;
-}
-.page-workshops .workshop-list li h4 {
-   font-size: 25px;
-   font-size: 1.5625rem;
-   line-height: 1.92;
-   line-height: 1.3em;
-}
-.page-workshops .workshop-list li .detail {
-   padding: 1.2em;
 }
 .page-home .adverts .ad .ad-details {
    padding: 2em;
@@ -2708,13 +1388,15 @@
    font-size: 1rem;
    line-height: 1.5;
    line-height: 1;
-   top: 45%}
+   top: 45%
+}
 .page-home .speakers ol .two .speaker-detail .company {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1;
-   top: 65%}
+   top: 65%
+}
 .page-home .speakers ol .one .speaker-detail {
    top: 0;
    bottom: 0;
@@ -2724,11 +1406,13 @@
    font-size: 1.1875rem;
    line-height: 1.26316;
    line-height: 1;
-   top: 43%}
+   top: 43%
+}
 .page-home .speakers ol .one .speaker-detail .company {
    font-size: 18px;
    font-size: 1.125rem;
    line-height: 1.33333;
    line-height: 1;
-   top: 58%}
+   top: 58%
+}
 }

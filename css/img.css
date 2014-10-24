@@ -43,7 +43,7 @@
    background-origin: content-box
 }
 .page-head .logo:before, .page-foot div:after {
-   background-image: url("../images/logo.png");
+   background-image: url("../images/mpbeta1.png");
    background-repeat: no-repeat;
    background-position: 0 0;
    background-size: auto 100%;
@@ -53,10 +53,11 @@
    -o-background-origin: content-box;
    background-origin: content-box
 }
-.page-head .register-today {
-   background-image: url("../svg/register-btns/register-today.svg");
+.page-head .register img {
+   background-image: url("../images/logo.png");
    background-repeat: no-repeat;
-   background-size: 100% 100%
+   background-position: center;
+   background-size: 100% auto;
 }
 .page-head .nav-menu {
    background-image: url("../svg/menu.svg");
@@ -153,13 +154,14 @@
    background-repeat: no-repeat;
    background-size: auto auto
 }
-.page-home .register-today {
-   background-image: url("../svg/register-btns/large-register-today.svg");
-   background-repeat: no-repeat;
-   background-size: auto auto
+.page-home .register img {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 .page-home .twentythirteen img {
    background-image: url("../svg/2013.svg");
    background-repeat: no-repeat;
-   background-size: auto auto
+   background-size: 100% auto;
 }
