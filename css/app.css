@@ -226,6 +226,9 @@ canvas {
 .extend {
    display: none
 }
+.right {
+    float: right !important;
+}
 
 .page-head {
    background-color: #d63737;
@@ -297,7 +300,7 @@ canvas {
    top: -9999px !important;
    left: -9999px !important
 }
-.page-head .register {
+.page-head .logo-top {
    font-family: "proxima-nova",sans-serif;
    font-weight: 700;
    color: #fff;
@@ -312,28 +315,28 @@ canvas {
    text-align: center;
    width: 33.4%
 }
-.page-head .register > span {
+.page-head .logo-top > span {
    display: block
 }
-.page-head .register .reg-head {
+.page-head .logo-top .reg-head {
    margin-top: .3125em;
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
    line-height: 1.1em
 }
-.page-head .register .reg-sub {
+.page-head .logo-top .reg-sub {
    font-size: 7px;
    font-size: .4375rem;
    line-height: 3.42857;
    line-height: 1em
 }
-.page-head .register > img {
+.page-head .logo-top > img {
     display: inline-block;
     height: 100%;
     width: 100%;
 }
-.page-head .register:hover {
+.page-head .logo-top:hover {
     background-color: #a18e5c
 }
 
@@ -471,8 +474,14 @@ canvas {
    margin: 0 auto
 }
 .grid .icon {
-   display: none;
-   overflow: hidden
+    display: none;
+    overflow: hidden;
+    padding: .625em;
+    width: 33.33%;
+    float: left;
+}
+.page-home .icon img {
+    background-color: #a18e5c;
 }
 .grid .intro {
    font-family: "proxima-nova",sans-serif;
@@ -531,39 +540,40 @@ canvas {
    -o-transition: opacity .6s linear;
    transition: opacity .6s linear
 }
-
 .page-home .adverts {
    padding: 0 .3125em;
    min-width: 100px
 }
-.page-home .adverts .register .date {
-   display: none
-}
 .page-home .adverts .ad {
    display: block;
    width: 50%;
-   padding: .3125em .3125em 0 .3125em;
-   float: left
+   padding: .3125em;
+   float: left;
+   color: #d63737;
 }
 .page-home .adverts .ad img {
    display: none;
-   background-color: #e6e5e1
+   background-color: transparent;
+}
+.page-home .adverts .ad-small img {
+   background-color: #e6e5e1;
+   padding-bottom: 0 !important;
+}
+.page-home .adverts .ad-small:hover img {
+   background-color: #d5d4d1;
 }
 .page-home .adverts .ad .ad-details {
    display: block;
    position: relative;
    background-color: #e6e5e1;
    padding: .5em;
-   height: 10em
+   height: 10em;
 }
 .page-home .adverts .ad .ad-details:hover {
    background-color: #d5d4d1
 }
 .page-home .adverts .ad .ad-details h4 {
    display: block;
-   position: absolute;
-   left: 0;
-   bottom: .5em;
    text-align: center;
    width: 100%;
    padding: .5em;
@@ -574,25 +584,49 @@ canvas {
    line-height: 1.2em
 }
 .page-home .adverts .ad .ad-details p {
-   display: none
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 2;
+    line-height: 1.4em;
+    margin-top: .5em;
+    color: #d63737;
+    display: inline-block;
 }
-.page-home .adverts .hand-picked-speakers .ad-details {
-   background-color: #2b2b2b
+.page-home .adverts .ad-dark .ad-details h4 {
+    color: #d63737;
 }
-.page-home .adverts .hand-picked-speakers .ad-details:hover {
-   background-color: #E7E5E1
+.page-home .adverts .ad-dark {
+    color: #d63737;
 }
-.page-home .adverts .hand-picked-speakers .ad-details:hover h4 {
-   color: #a18e5c
+.page-home .adverts .ad-dark img {
+    background-color: #e6e5e1;
 }
-.page-home .adverts .hand-picked-speakers .ad-details h4 {
-   color: #fff
+.page-home .adverts .ad-dark:hover img {
+    background-color: #d5d4d1;
 }
-.page-home .fillers {
-   display: none
+.page-content .ad-link, .page-home .ad-link {
+    display: block;
+    height: 10em;
+    position: relative;
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+}
+.page-content .ad-link h5, .page-home .ad-link h5 {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #d63737;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: block;
+    padding-bottom: 5px;
 }
 .page-home .extend,.page-home .actions {
-   display: none
+    display: none
+}
+.page-general .extend,.page-general .actions {
+    display: none
 }
 .page-home .speakers ol {
    list-style: none;
@@ -673,7 +707,7 @@ canvas {
    left: 0;
    right: 0;
    list-style: none;
-   padding: .3125em;
+   padding: 0 .3125em;
    width: 100%
 }
 .page-foot div .links li {
@@ -695,13 +729,6 @@ canvas {
 }
 .page-foot div .links li a:hover {
    background-color: #2b2b2b
-}
-.page-foot div .links li .newsletter {
-   color: #d63737
-}
-.page-foot div .links li .register {
-   background-color: #d63737;
-   color: #fff
 }
 .page-foot div .social {
    position: absolute;

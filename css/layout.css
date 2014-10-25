@@ -29,6 +29,7 @@
 }
 .grid .grid-item {
 }
+
 @media only screen and (min-width:23em) {
 .page-foot div .links li a {
    font-size: 20px;
@@ -47,17 +48,17 @@
 .wrapper {
    padding-bottom: 8.1em;
 }
-.page-head .register {
+.page-head .logo-top {
    width: 34.33%
 }
-.page-head .register .reg-head {
+.page-head .logo-top .reg-head {
    margin-top: .1em;
    font-size: 18px;
    font-size: 1.125rem;
    line-height: 1.33333;
    line-height: 1.1em;
 }
-.page-head .register .reg-sub {
+.page-head .logo-top .reg-sub {
     font-size: 9px;
     font-size: .5625rem;
     line-height: 2.66667;
@@ -103,12 +104,6 @@
    font-size: .75rem;
    line-height: 2;
    line-height: 1.6em;
-}
-.page-general .testimonial .ad-testimonial p {
-   font-size: 10px;
-   font-size: .625rem;
-   line-height: 2.4;
-   line-height: 1.4em;
 }
 .page-general .advisors li .detail {
    margin-top: -15px;
@@ -210,17 +205,17 @@
    width: 51px;
    height: 51px;
 }
-.page-head .register {
+.page-head .logo-top {
    padding: 0;
 }
-.page-head .register .reg-head {
+.page-head .logo-top .reg-head {
    font-size: 30px;
    font-size: 1.875rem;
    line-height: 1.6;
    line-height: 1em;
 
 }
-.page-head .register .reg-sub {
+.page-head .logo-top .reg-sub {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
@@ -271,12 +266,6 @@
    line-height: 1.71429;
    line-height: 1.7em;
 }
-.page-general .testimonial .ad-testimonial p {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.4em;
-}
 .page-general h4 {
    font-size: 25px;
    font-size: 1.5625rem;
@@ -295,6 +284,9 @@
    line-height: 1.2;
    line-height: 1.3em;
 }
+.grid .icon {
+    display: inline-block;
+}
 .grid .intro {
    min-height: 17.2em;
 }
@@ -303,7 +295,8 @@
    font-size: 3.8125rem;
    line-height: 1.18033;
    line-height: 1em;
-   max-width: 80%}
+   max-width: 100%;
+}
 .grid .intro h2 {
    font-size: 22px;
    font-size: 1.375rem;
@@ -316,21 +309,20 @@
    line-height: 1.41176;
    line-height: 1.5em;
    letter-spacing: .2em;
-   max-width: 30em;
+   max-width: 100%;
 }
 .page-home .adverts .ad .ad-details {
-   padding: .5em;
-   height: 13em;
+    text-align: center;
+    height: 13em;
 }
 .page-home .adverts .ad .ad-details h4 {
-   bottom: 12%;
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   padding: 0 1em;
-}
-.page-home .adverts .ad .ad-details p {
-   display: none;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    position: static;
+    padding: 0 1em;
+    width: 100%;
+    text-align: center;
 }
 .speaker-detail h3 {
    font-size: 12px;
@@ -506,7 +498,7 @@ html {
    color: #2b2b2b;
    margin-left: 6.8em;
 }
-.page-head .register {
+.page-head .logo-top {
    position: relative;
    overflow: hidden;
    float: right;
@@ -515,14 +507,14 @@ html {
    z-index: 2;
    width: auto;
 }
-.page-head .register:hover {
+.page-head .logo-top:hover {
    background-color: #2b2b2b;
    color: #fff;
 }
-.page-head .register > span {
+.page-head .logo-top > span {
    display: none;
 }
-.page-head .register > img {
+.page-head .logo-top > img {
    display: inline-block;
    height: auto;
    width: auto;
@@ -533,7 +525,11 @@ html {
    float: left;
 }
 .grid .icon {
-   display: inline-block;
+   padding: .3125em;
+   width: auto;
+}
+.page-home .icon img {
+   background-color: #a18e5c;
 }
 .grid .intro {
    background-color: transparent;
@@ -551,7 +547,8 @@ html {
    line-height: .9em;
    color: #d63737;
    letter-spacing: .02em;
-   max-width: 95%}
+   max-width: 95%
+}
 .grid .intro h1 em {
    color: #a18e5c;
    font-style: normal;
@@ -575,6 +572,7 @@ html {
    font-weight: 600;
    letter-spacing: .1em;
    margin-top: .7em;
+   max-width: 30em;
 }
 .page-content {
    padding-top: .3125em;
@@ -599,9 +597,6 @@ html {
 .page-content .extend a:hover img {
    background-color: #d5d4d1;
 }
-.page-content .extend .testimonial img {
-   background-color: #2b2b2b;
-}
 .page-content .extend .sponsors {
    padding: .3125em;
 }
@@ -621,6 +616,26 @@ html {
 }
 .page-general {
    padding: 0;
+}
+.page-general .actions {
+    display: inline-block;
+    padding: 0 0 .3125em 0;
+}
+.page-general .actions .ad {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    padding: .3125em;
+}
+.page-general .actions .logo {
+    position: relative;
+}
+.page-general .actions .logo img {
+    background-color: #d63737;
+    padding: 0;
+}
+.page-general .actions .logo:hover img {
+    background-color: #2b2b2b;
 }
 .page-general .price.super {
    margin-top: .3125em;
@@ -669,21 +684,6 @@ html {
    right: 0;
    bottom: 0;
 }
-.page-general .testimonial:last-child {
-   border: none;
-}
-.page-general .testimonial {
-   width: 100%;
-   float: none;
-   border-right: none;
-   margin-bottom: .625em;
-}
-.page-general .testimonial .ad-testimonial p {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.4em;
-}
 .page-general h4 {
    font-family: "proxima-nova", sans-serif;
    text-transform: uppercase;
@@ -715,9 +715,6 @@ html {
    line-height: 2.18182;
    line-height: 1.3em;
 }
-.page-home .icon img {
-   background-color: #a18e5c;
-}
 .page-home .extend {
    clear: both;
    max-width: 100%;
@@ -736,9 +733,6 @@ html {
 }
 .page-home .extend a:hover img {
    background-color: #d5d4d1;
-}
-.page-home .extend .testimonial img {
-   background-color: #2b2b2b;
 }
 .page-home .extend .sponsors {
    padding: .3125em;
@@ -759,34 +753,15 @@ html {
    display: inline-block;
    padding: .3125em;
 }
-.page-home .actions .register {
+.page-home .actions .logo {
    position: relative;
 }
-.page-home .actions .register img {
+.page-home .actions .logo img {
    background-color: #d63737;
    padding: 0;
 }
-.page-home .actions .register:hover img {
+.page-home .actions .logo:hover img {
    background-color: #2b2b2b;
-}
-.page-home .actions .register .date {
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.5em;
-   font-family: "proxima-nova", sans-serif;
-   font-weight: 700;
-   position: absolute;
-   bottom: 8%;
-   display: block;
-   text-align: center;
-   width: 100%;
-   text-transform: uppercase;
-   color: #fafaf6;
-   letter-spacing: .1em;
-}
-.page-home .actions .twentythirteen img {
-   padding: 0;
 }
 .page-home .adverts {
    display: block;
@@ -796,38 +771,55 @@ html {
 .page-home .adverts .ad {
    padding: .3125em;
    position: relative;
-   color: #a18e5c;
    display: block;
    width: 50%;
-   height: 100%}
+   height: 100%
+}
 .page-home .adverts .ad img {
    padding-bottom: .625em;
    width: auto;
    display: block;
 }
-.page-home .adverts .hand-picked-speakers .ad-details h4 {
-   color: #a18e5c;
+.page-home .adverts .ad .ad-details h4 {
+    position: absolute;
+    left: 0;
+    bottom: .5em;
 }
-.page-home .adverts .hand-picked-speakers img {
-   background-color: #2b2b2b;
+.page-home .adverts .ad .ad-details h4, .page-home .adverts .ad .ad-details p {
+    color: #a18e5c;
 }
-.page-home .adverts .hand-picked-speakers:hover img {
-   background-color: #e6e5e1;
+.page-home .adverts .ad-dark .ad-details h4, .page-home .adverts .ad-dark .ad-details p {
+    color: #d63737;
 }
-.page-home .adverts .five-awesome-tracks {
-   color: #d63737;
+.page-home .adverts .ad .ad-details {
+    position: absolute;
+    top: 50%;
+    padding: 15%;
+    text-align: center;
+    height: auto;
+    background-color: transparent;
+    background-image: none;
 }
-.page-home .adverts .five-awesome-tracks img {
-   background-color: #e6e5e1;
+.page-home .adverts .ad .ad-details:hover {
+    background-color: transparent;
 }
-.page-home .adverts .five-awesome-tracks:hover img {
-   background-color: #d5d4d1;
+.page-home .adverts .ad .ad-details h4 {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.71429;
+    line-height: 1.3em;
+    position: static;
+    padding: 0;
+    width: 100%;
+    text-align: center;
 }
-.page-home .adverts .hot-topics .ad-details h4, .page-home .adverts .packed-schedule .ad-details h4 {
-   color: #a18e5c;
-}
-.page-home .fillers {
-   display: block;
+.page-content .ad-link, .page-home .ad-link {
+    display: block;
+    height: 5em;
+    position: absolute;
+    width: 100%;
+    padding: 10%;
+    text-align: center;
 }
 .page-home .speakers {
    clear: left;
@@ -907,80 +899,6 @@ html {
    line-height: 1;
    margin-top: -10px;
 }
-.page-home .adverts .hot-topics img, .page-home .adverts .packed-schedule img {
-   background-color: transparent;
-}
-.page-home .adverts .ad .ad-details {
-   position: absolute;
-   top: 50%;
-   padding: 15%;
-   text-align: center;
-   height: auto;
-   background-color: transparent;
-   background-image: none;
-}
-.page-home .adverts .ad .ad-details:hover {
-   background-color: transparent;
-}
-.page-home .adverts .ad .ad-details h4 {
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.3em;
-   position: static;
-   padding: 0;
-   width: 100%;
-   text-align: center;
-}
-.page-home .adverts .ad .ad-details p {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1.4em;
-   margin-top: .5em;
-   display: inline-block;
-}
-.page-home .ad-testimonial {
-   position: absolute;
-   top: 0;
-   padding: 10%}
-.page-home .ad-testimonial p {
-   font-family: georgia;
-   font-style: italic;
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   line-height: 1.4em;
-}
-.page-home .ad-testimonial .testimony {
-   color: #a18e5c;
-   margin-top: 25%}
-.page-home .ad-testimonial .name {
-   margin-top: 5%;
-   color: #fff;
-}
-.page-home .ad-testimonial .name em {
-   color: #d63737;
-}
-.page-content .ad-link, .page-home .ad-link {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   width: 100%;
-   padding: 10%;
-   text-align: center;
-}
-.page-content .ad-link h5, .page-home .ad-link h5 {
-   font-family: "proxima-nova", sans-serif;
-   font-size: 13px;
-   font-size: .8125rem;
-   line-height: 1.84615;
-   line-height: 1.4em;
-   color: #d63737;
-   text-transform: uppercase;
-   letter-spacing: .2em;
-   display: inline-block;
-   margin-top: 70%}
 .page-content .sponsors-gold .ad-link, .page-home .sponsors-gold .ad-link {
    position: absolute;
    top: 0;
@@ -1050,13 +968,6 @@ html {
 .page-foot div .links li a:hover {
    background-color: transparent;
    color: #2b2b2b;
-}
-.page-foot div .links li .newsletter {
-   color: #a18e5c;
-}
-.page-foot div .links li .register {
-   background-color: transparent;
-   color: #a18e5c;
 }
 .page-foot div .social {
    right: -.4em;
@@ -1130,12 +1041,6 @@ html {
    line-height: 1.6;
    line-height: 1.6em;
    margin-top: 1.5em;
-}
-.page-general .testimonial .ad-testimonial p {
-   font-size: 16px;
-   font-size: 1rem;
-   line-height: 1.5;
-   line-height: 1.4em;
 }
 .page-general .advisors li {
    margin-bottom: .625em;
@@ -1269,18 +1174,6 @@ html {
    line-height: 1.6;
    line-height: 1.5em;
 }
-.page-home .actions .register .date {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
-   line-height: 1.5em;
-}
-.page-home .ad-testimonial p {
-   font-size: 16px;
-   font-size: 1rem;
-   line-height: 1.5;
-   line-height: 1.4em;
-}
 .page-content .ad-link h5, .page-home .ad-link h5 {
    font-size: 18px;
    font-size: 1.125rem;
@@ -1375,12 +1268,6 @@ html {
    font-size: 24px;
    font-size: 1.5rem;
    line-height: 1;
-   line-height: 1.4em;
-}
-.page-home .ad-testimonial p {
-   font-size: 20px;
-   font-size: 1.25rem;
-   line-height: 1.2;
    line-height: 1.4em;
 }
 .page-home .speakers ol .two .speaker-detail h3 {

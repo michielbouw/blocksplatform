@@ -53,7 +53,7 @@
    -o-background-origin: content-box;
    background-origin: content-box
 }
-.page-head .register img {
+.page-head .logo-top img {
    background-image: url("../images/logo.png");
    background-repeat: no-repeat;
    background-position: center;
@@ -106,62 +106,21 @@
    -o-background-origin: content-box;
    background-origin: content-box
 }
-.page-home .hand-picked-speakers img {
-   background-image: url("../svg/hand-picked-speakers.svg");
-   background-repeat: no-repeat;
-   background-size: auto auto
-}
-@media only screen and (max-width: 48em) {
-   .page-home .hand-picked-speakers .ad-details {
-   background-image: url("../svg/hand-picked-speakers.svg");
-   background-repeat: no-repeat;
-   -webkit-background-origin: content-box;
-   -moz-background-origin: content-box;
-   -ms-background-origin: content-box;
-   -o-background-origin: content-box;
-   background-origin: content-box;
-   background-position: 50% 0;
-   background-size: auto auto
+
+.page-home .ad img {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
-}
-.page-home .five-awesome-tracks img {
-   background-image: url("../svg/five-awesome-tracks.svg");
-   background-repeat: no-repeat;
-   background-size: auto auto
-}
-@media only screen and (max-width: 48em) {
-   .page-home .five-awesome-tracks .ad-details {
-   background-image: url("../svg/five-awesome-tracks.svg");
-   background-repeat: no-repeat;
-   -webkit-background-origin: content-box;
-   -moz-background-origin: content-box;
-   -ms-background-origin: content-box;
-   -o-background-origin: content-box;
-   background-origin: content-box;
-   background-position: 50% 0;
-   background-size: auto auto
-}
-
-}
-.page-home .packed-schedule img {
-   background-image: url("../svg/packed-schedule.svg");
-   background-repeat: no-repeat;
-   background-size: auto auto
-}
-.page-home .hot-topics img {
-   background-image: url("../svg/hot-topics.svg");
-   background-repeat: no-repeat;
-   background-size: auto auto
-}
-.page-home .register img {
+.page-home .ad.logo img {
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
 }
-.page-home .twentythirteen img {
-   background-image: url("../svg/2013.svg");
-   background-repeat: no-repeat;
-   background-size: 100% auto;
+.page-general .ad.logo img {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
