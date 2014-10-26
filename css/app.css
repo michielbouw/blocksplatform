@@ -158,14 +158,14 @@ label,input,textarea,button,select,option {
    cursor: text;
    outline: none
 }
-.nav-list,.grid,.extend,.page-head,.grid.page-general .grid-item.s,.page-home .speakers ol {
+.nav-list,.grid,.extend,.page-head,.grid.page-general .grid-item.s {
    zoom: 1
 }
-.nav-list:before,.grid:before,.extend:before,.page-head:before,.grid.page-general .grid-item.s:before,.page-home .speakers ol:before,.nav-list:after,.grid:after,.extend:after,.page-head:after,.grid.page-general .grid-item.s:after,.page-home .speakers ol:after {
+.nav-list:before,.grid:before,.extend:before,.page-head:before,.grid.page-general .grid-item.s:before,.nav-list:after,.grid:after,.extend:after,.page-head:after,.grid.page-general .grid-item.s:after {
    content: " ";
    display: table
 }
-.nav-list:after,.grid:after,.extend:after,.page-head:after,.grid.page-general .grid-item.s:after,.page-home .speakers ol:after {
+.nav-list:after,.grid:after,.extend:after,.page-head:after,.grid.page-general .grid-item.s:after{
    clear: both
 }
 .nav-list {
@@ -346,58 +346,21 @@ canvas {
 .page-general {
    padding: 0 .625em;
 }
-.page-general .price.super {
-   background-color: #a18e5c;
-   border-right: .3125em solid #fafaf6;
-   border-left: none
-}
-.page-general .price.early {
-   background-color: #acacac;
-   border-right: .3125em solid #fafaf6;
-   border-left: .3125em solid #fafaf6
-}
-.page-general .price {
+.page-general .sidebar {
    border-left: .3125em solid #fafaf6;
    display: block;
-   background-color: #b29471;
+   background-color: #e6e5e1;
    padding: .625em;
    height: 5em;
    width: 33.33%;
    float: left;
    font-family: "proxima-nova",sans-serif;
+   color: #d63737;
+}
+.page-general .sidebar p {
+   font-weight: bold;
    text-transform: uppercase;
-   color: #fff
-}
-.page-general .price .amount {
-   display: block;
-   font-weight: 700;
-   font-size: 30px;
-   font-size: 1.875rem;
-   line-height: 1.6;
-   line-height: 1
-}
-.page-general .price .amount em {
-   font-style: normal;
-   font-size: 15px;
-   font-size: .9375rem;
-   line-height: 1.6;
-   vertical-align: super;
-   line-height: 1
-}
-.page-general .price .type {
-   display: block;
-   font-weight: 700;
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1.4em
-}
-.page-general .price small {
-   display: block;
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1.4em
+   font-size: 18px;
 }
 .page-general h1 {
    font-family: "proxima-nova",sans-serif;
@@ -476,7 +439,7 @@ canvas {
 .grid .icon {
     display: none;
     overflow: hidden;
-    padding: .625em;
+    padding: .625em .625em .625em .3125em;
     width: 33.33%;
     float: left;
 }
@@ -540,20 +503,30 @@ canvas {
    -o-transition: opacity .6s linear;
    transition: opacity .6s linear
 }
+.page-home {
+    padding: 0 .3125em;
+}
 .page-home .adverts {
-   padding: 0 .3125em;
-   min-width: 100px
+   width: 50%;
+   padding: 0;
+}
+.page-home .adverts.left {
+    clear: left;
+    position: relative;
+    float: left;
 }
 .page-home .adverts .ad {
-   display: block;
-   width: 50%;
+   width: 100%;
    padding: .3125em;
    float: left;
    color: #d63737;
+   display: inline-block;
+   position: relative;
 }
 .page-home .adverts .ad img {
    display: none;
    background-color: transparent;
+   border: 1px solid #e6e5e1;
 }
 .page-home .adverts .ad-small img {
    background-color: #e6e5e1;
@@ -567,6 +540,7 @@ canvas {
    position: relative;
    background-color: #e6e5e1;
    padding: .5em;
+   padding-top: 15px;
    height: 10em;
 }
 .page-home .adverts .ad .ad-details:hover {
@@ -609,8 +583,10 @@ canvas {
     height: 10em;
     position: relative;
     width: 100%;
-    padding: 10%;
+    padding: 5px;
+    padding-top: 15px;
     text-align: center;
+    border: 1px solid #e6e5e1;
 }
 .page-content .ad-link h5, .page-home .ad-link h5 {
     font-family: "proxima-nova", sans-serif;
@@ -628,23 +604,24 @@ canvas {
 .page-general .extend,.page-general .actions {
     display: none
 }
-.page-home .speakers ol {
-   list-style: none;
-   padding: .3125em .3125em 0 .3125em
+.page-home .adverts li {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    padding: .3125em;
 }
-.page-home .speakers ol li {
-   padding: .3125em;
-   width: 33.33%;
-   display: inline-block;
-   position: relative;
-   cursor: pointer;
-   float: left
+.page-home .adverts li:hover .advert-detail {
+    display: block;
+    background-color: rgba(0,0,0,0.6)
 }
-.page-home .speakers ol li:hover .speaker-detail {
-   display: block;
-   background-color: rgba(0,0,0,0.6)
+.page-home .adverts li img {
+    width: 100%;
+    height: auto;
 }
-.speaker-detail {
+.advert-detail {
    position: absolute;
    top: .3125em;
    left: .3125em;
@@ -653,7 +630,7 @@ canvas {
    display: none;
    z-index: 2
 }
-.speaker-detail h3 {
+.advert-detail h3 {
    font-family: "proxima-nova",sans-serif;
    font-size: 9px;
    font-size: .5625rem;
@@ -672,7 +649,7 @@ canvas {
    text-transform: uppercase;
    white-space: nowrap
 }
-.speaker-detail .company {
+.advert-detail .company {
    font-family: "proxima-nova",sans-serif;
    font-size: 9px;
    font-size: .5625rem;

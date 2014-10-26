@@ -1,3 +1,24 @@
+$(document).ready(function() {
+    var $containerLeft = $('.adverts.left');
+    var $containerRight = $('.adverts.right');
+
+    $containerLeft.isotope({
+        itemSelector: '#ad',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: '#ad'
+        }
+    });
+    $containerRight.isotope({
+        itemSelector: '.ad',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: '.ad'
+        }
+    });
+});
+
+
 $(function() {
       var obj = $("html");
       $(".menu-open").on("click", function () {

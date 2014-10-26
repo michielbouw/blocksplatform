@@ -72,22 +72,22 @@
    line-height: 1.2;
    line-height: 1.6em;
 }
-.page-general .price {
+.page-general .sidebar {
    height: 4.2em;
 }
-.page-general .price .amount {
+.page-general .sidebar .amount {
    font-size: 25px;
    font-size: 1.5625rem;
    line-height: 1.92;
    line-height: 1;
 }
-.page-general .price .type {
+.page-general .sidebar .type {
    font-size: 7px;
    font-size: .4375rem;
    line-height: 3.42857;
    line-height: 1.4em;
 }
-.page-general .price small {
+.page-general .sidebar small {
    font-size: 7px;
    font-size: .4375rem;
    line-height: 3.42857;
@@ -227,22 +227,22 @@
    line-height: 1.37143;
    line-height: 1;
 }
-.page-general .price {
+.page-general .sidebar {
    height: 6em;
 }
-.page-general .price .amount {
+.page-general .sidebar .amount {
    font-size: 35px;
    font-size: 2.1875rem;
    line-height: 1.37143;
    line-height: 1;
 }
-.page-general .price .type {
+.page-general .sidebar .type {
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
    line-height: 1.4em;
 }
-.page-general .price small {
+.page-general .sidebar small {
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
@@ -324,13 +324,13 @@
     width: 100%;
     text-align: center;
 }
-.speaker-detail h3 {
+.advert-detail h3 {
    font-size: 12px;
    font-size: .75rem;
    line-height: 2;
    line-height: 1;
 }
-.speaker-detail .company {
+.advert-detail .company {
    font-size: 11px;
    font-size: .6875rem;
    line-height: 2.18182;
@@ -535,16 +535,14 @@ html {
    background-color: transparent;
    font-family: "proxima-nova", sans-serif;
    text-transform: uppercase;
-   padding: 3em 2em 0 2em;
+   padding: 10em 2em 0 2em;
    min-height: auto;
 }
 .grid .intro h1 {
    width: 100%;
-   font-size: 48px;
-   font-size: 3rem;
-   line-height: 1;
+   font-size: 40px;
    font-weight: 700;
-   line-height: .9em;
+   line-height: 44px;
    color: #d63737;
    letter-spacing: .02em;
    max-width: 95%
@@ -556,7 +554,6 @@ html {
 }
 .grid .intro h2 {
    font-size: 13px;
-   font-size: .8125rem;
    line-height: 1.84615;
    letter-spacing: .1em;
    margin-top: .7em;
@@ -565,10 +562,8 @@ html {
 }
 .grid .intro h3 {
    color: #d63737;
-   font-size: 14px;
-   font-size: .875rem;
-   line-height: 1.71429;
-   line-height: 1.3em;
+   font-size: 12px;
+   line-height: 14px;
    font-weight: 600;
    letter-spacing: .1em;
    margin-top: .7em;
@@ -637,15 +632,15 @@ html {
 .page-general .actions .logo:hover img {
     background-color: #2b2b2b;
 }
-.page-general .price.super {
+.page-general .sidebar.super {
    margin-top: .3125em;
    border: none;
 }
-.page-general .price.early {
+.page-general .sidebar.early {
    margin: 0 0 .625em 0;
    border: none;
 }
-.page-general .price {
+.page-general .sidebar {
    width: 100%;
    height: auto;
    margin-bottom: .625em;
@@ -763,17 +758,17 @@ html {
 .page-home .actions .logo:hover img {
    background-color: #2b2b2b;
 }
+.page-home {
+    padding: 0;
+}
 .page-home .adverts {
    display: block;
    padding: 0;
    position: relative;
+   width: 50%;
 }
 .page-home .adverts .ad {
-   padding: .3125em;
-   position: relative;
-   display: block;
    width: 50%;
-   height: 100%
 }
 .page-home .adverts .ad img {
    padding-bottom: .625em;
@@ -820,79 +815,67 @@ html {
     width: 100%;
     padding: 10%;
     text-align: center;
+    border: none;
 }
-.page-home .speakers {
+.page-home .adverts.left {
    clear: left;
    padding: 0;
    position: relative;
 }
-.page-home .speakers ol {
-   list-style: none;
-   padding: 0;
-}
-.page-home .speakers ol li {
-   padding: .3125em;
+.page-home .adverts li {
    width: 50%;
-   float: left;
 }
-.page-home .speakers ol li:last-child {
-   float: right;
-}
-.page-home .speakers ol .one {
+.page-home .adverts .one {
    position: absolute;
-   top: -34%;
+   top: -10.3125em;
    right: -50%;
    overflow: hidden;
-   height: 33%}
-.page-home .speakers ol .one .speaker-detail {
+   height: 10em;
+}
+.page-home .adverts .one .advert-detail {
    top: 0;
    bottom: 0;
 }
-.page-home .speakers ol .one .speaker-detail h3 {
+.page-home .adverts .one .advert-detail h3 {
    font-size: 13px;
-   font-size: .8125rem;
    line-height: 1.84615;
-   line-height: 1;
-   top: 42%}
-.page-home .speakers ol .one .speaker-detail .company {
+   top: 42%
+}
+.page-home .adverts .one .advert-detail .company {
    font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
    line-height: 1;
-   top: 57%}
-.page-home .speakers ol .one img {
+   top: 57%
+}
+.page-home .adverts .one img {
    position: relative;
-   top: -2.5em;
+   top: -1em;
 }
-.page-home .speakers ol .two {
+.page-home .adverts .two {
    position: absolute;
-   top: -17.8%;
-   right: -100%}
-.page-home .speakers ol .two .speaker-detail h3 {
-   font-size: 12px;
-   font-size: .75rem;
-   line-height: 2;
-   line-height: 1;
-   top: 39%}
-.page-home .speakers ol .two .speaker-detail .company {
-   font-size: 11px;
-   font-size: .6875rem;
-   line-height: 2.18182;
-   line-height: 1;
-   top: 69%}
-.page-home .speakers ol .two img {
-   width: 33%}
-.page-home .speakers ol .visual {
-   display: none;
+   top: -7.625em;
+   right: -100%
 }
-.speaker-detail h3 {
+.page-home .adverts .two .advert-detail h3 {
+   font-size: 12px;
+   line-height: 2;
+   top: 39%
+}
+.page-home .adverts .two .advert-detail .company {
+   font-size: 11px;
+   line-height: 2.18182;
+   top: 69%
+}
+.page-home .adverts .two img {
+   width: 7em;
+}
+.advert-detail h3 {
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
    line-height: 1;
    margin-top: -10px;
 }
-.speaker-detail .company {
+.advert-detail .company {
    font-size: 13px;
    font-size: .8125rem;
    line-height: 1.84615;
@@ -999,25 +982,25 @@ html {
 }
 .page-general {
 }
-.page-general .price .amount {
+.page-general .sidebar .amount {
    font-size: 60px;
    font-size: 3.75rem;
    line-height: 1.2;
    line-height: 1;
 }
-.page-general .price .amount em {
+.page-general .sidebar .amount em {
    font-size: 22px;
    font-size: 1.375rem;
    line-height: 1.09091;
    line-height: 1;
 }
-.page-general .price .type {
+.page-general .sidebar .type {
    font-size: 22px;
    font-size: 1.375rem;
    line-height: 1.09091;
    line-height: 1.4em;
 }
-.page-general .price small {
+.page-general .sidebar small {
    font-size: 22px;
    font-size: 1.375rem;
    line-height: 1.09091;
@@ -1099,63 +1082,60 @@ html {
    margin-left: 7.4em;
 }
 .grid .intro {
-   padding: 4.5em 0 0 2.5em;
+   padding: 9em 0 4em 2.5em;
 }
 .grid .intro h1 {
    width: 98%;
-   font-size: 65px;
-   font-size: 4.0625rem;
-   line-height: 1.10769;
-   line-height: .9em;
-   max-width: 100%}
+   font-size: 60px;
+   line-height: 64px;
+   max-width: 100%
+}
 .grid .intro h2 {
    font-size: 18px;
-   font-size: 1.125rem;
    line-height: 1.33333;
 }
 .grid .intro h3 {
-   font-size: 19px;
-   font-size: 1.1875rem;
-   line-height: 1.26316;
+   font-size: 16px;
+   line-height: 20px;
    letter-spacing: .1em;
    margin-top: 1em;
 }
-.page-home .speakers ol .two .speaker-detail h3 {
+.page-home .adverts .two .advert-detail h3 {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1;
    top: 39%}
-.page-home .speakers ol .two .speaker-detail .company {
+.page-home .adverts .two .advert-detail .company {
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
    line-height: 1;
    top: 69%}
-.page-home .speakers ol .one .speaker-detail {
+.page-home .adverts .one .advert-detail {
    top: 0;
    bottom: 0;
 }
-.page-home .speakers ol .one .speaker-detail h3 {
+.page-home .adverts .one .advert-detail h3 {
    font-size: 17px;
    font-size: 1.0625rem;
    line-height: 1.41176;
    line-height: 1;
    top: 42%}
-.page-home .speakers ol .one .speaker-detail .company {
+.page-home .adverts .one .advert-detail .company {
    font-size: 16px;
    font-size: 1rem;
    line-height: 1.5;
    line-height: 1;
    top: 57%}
-.speaker-detail h3 {
+.advert-detail h3 {
    font-size: 20px;
    font-size: 1.25rem;
    line-height: 1.2;
    line-height: 1;
    margin-top: -10px;
 }
-.speaker-detail .company {
+.advert-detail .company {
    font-size: 19px;
    font-size: 1.1875rem;
    line-height: 1.26316;
@@ -1270,32 +1250,32 @@ html {
    line-height: 1;
    line-height: 1.4em;
 }
-.page-home .speakers ol .two .speaker-detail h3 {
+.page-home .adverts .two .advert-detail h3 {
    font-size: 16px;
    font-size: 1rem;
    line-height: 1.5;
    line-height: 1;
    top: 45%
 }
-.page-home .speakers ol .two .speaker-detail .company {
+.page-home .adverts .two .advert-detail .company {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1;
    top: 65%
 }
-.page-home .speakers ol .one .speaker-detail {
+.page-home .adverts .one .advert-detail {
    top: 0;
    bottom: 0;
 }
-.page-home .speakers ol .one .speaker-detail h3 {
+.page-home .adverts .one .advert-detail h3 {
    font-size: 19px;
    font-size: 1.1875rem;
    line-height: 1.26316;
    line-height: 1;
    top: 43%
 }
-.page-home .speakers ol .one .speaker-detail .company {
+.page-home .adverts .one .advert-detail .company {
    font-size: 18px;
    font-size: 1.125rem;
    line-height: 1.33333;
