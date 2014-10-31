@@ -506,16 +506,16 @@ canvas {
 .page-home {
     padding: 0 .3125em;
 }
-.page-home .adverts {
+.page-home .items {
    width: 50%;
    padding: 0;
 }
-.page-home .adverts.left {
+.page-home .items.left {
     clear: left;
     position: relative;
     float: left;
 }
-.page-home .adverts .ad {
+.page-home .items .article {
    width: 100%;
    padding: .3125em;
    float: left;
@@ -523,19 +523,22 @@ canvas {
    display: inline-block;
    position: relative;
 }
-.page-home .adverts .ad img {
+.page-home .items .article img {
    display: none;
    background-color: transparent;
    border: 1px solid #e6e5e1;
 }
-.page-home .adverts .ad-small img {
+.page-home .items .article-dark img, .page-home .items .article-small img {
+   border: none;
+}
+.page-home .items .article-small img {
    background-color: #e6e5e1;
    padding-bottom: 0 !important;
 }
-.page-home .adverts .ad-small:hover img {
+.page-home .items .article-small:hover img {
    background-color: #d5d4d1;
 }
-.page-home .adverts .ad .ad-details {
+.page-home .items .article .article-details {
    display: block;
    position: relative;
    background-color: #e6e5e1;
@@ -543,10 +546,10 @@ canvas {
    padding-top: 15px;
    height: 10em;
 }
-.page-home .adverts .ad .ad-details:hover {
+.page-home .items .article .article-details:hover {
    background-color: #d5d4d1
 }
-.page-home .adverts .ad .ad-details h4 {
+.page-home .items .article .article-details h4 {
    display: block;
    text-align: center;
    width: 100%;
@@ -557,7 +560,7 @@ canvas {
    font-weight: 600;
    line-height: 1.2em
 }
-.page-home .adverts .ad .ad-details p {
+.page-home .items .article .article-details p {
     font-size: 12px;
     font-size: .75rem;
     line-height: 2;
@@ -566,19 +569,19 @@ canvas {
     color: #d63737;
     display: inline-block;
 }
-.page-home .adverts .ad-dark .ad-details h4 {
+.page-home .items .article-dark .article-details h4 {
     color: #d63737;
 }
-.page-home .adverts .ad-dark {
+.page-home .items .article-dark {
     color: #d63737;
 }
-.page-home .adverts .ad-dark img {
+.page-home .items .article-dark img {
     background-color: #e6e5e1;
 }
-.page-home .adverts .ad-dark:hover img {
+.page-home .items .article-dark:hover img {
     background-color: #d5d4d1;
 }
-.page-content .ad-link, .page-home .ad-link {
+.page-content .article-link, .page-home .article-link {
     display: block;
     height: 10em;
     position: relative;
@@ -588,7 +591,7 @@ canvas {
     text-align: center;
     border: 1px solid #e6e5e1;
 }
-.page-content .ad-link h5, .page-home .ad-link h5 {
+.page-content .article-link h5, .page-home .article-link h5 {
     font-family: "proxima-nova", sans-serif;
     font-size: 13px;
     line-height: 1.4em;
@@ -604,7 +607,7 @@ canvas {
 .page-general .extend,.page-general .actions {
     display: none
 }
-.page-home .adverts li {
+.page-home .items li {
     width: 100%;
     display: inline-block;
     position: relative;
@@ -613,15 +616,15 @@ canvas {
     list-style: none;
     padding: .3125em;
 }
-.page-home .adverts li:hover .advert-detail {
+.page-home .items li:hover .item-detail {
     display: block;
     background-color: rgba(0,0,0,0.6)
 }
-.page-home .adverts li img {
+.page-home .items li img {
     width: 100%;
     height: auto;
 }
-.advert-detail {
+.item-detail {
    position: absolute;
    top: .3125em;
    left: .3125em;
@@ -630,7 +633,7 @@ canvas {
    display: none;
    z-index: 2
 }
-.advert-detail h3 {
+.item-detail h3 {
    font-family: "proxima-nova",sans-serif;
    font-size: 9px;
    font-size: .5625rem;
@@ -649,7 +652,7 @@ canvas {
    text-transform: uppercase;
    white-space: nowrap
 }
-.advert-detail .company {
+.item-detail .company {
    font-family: "proxima-nova",sans-serif;
    font-size: 9px;
    font-size: .5625rem;

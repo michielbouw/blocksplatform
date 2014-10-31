@@ -107,18 +107,18 @@
    background-origin: content-box
 }
 
-.page-home .ad img {
+.page-home .article img {
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
-.page-home .ad.logo img {
+.page-home .article.logo img {
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
 }
-.page-general .ad.logo img {
+.page-general .article.logo img {
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-position: center;

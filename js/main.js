@@ -1,23 +1,29 @@
-$(document).ready(function() {
-    var $containerLeft = $('.adverts.left');
-    var $containerRight = $('.adverts.right');
+// isotope settings
+var $containerLeft = $('.items.left');
+var $containerRight = $('.items.right');
 
+function initIsotope() {
     $containerLeft.isotope({
-        itemSelector: '#ad',
+        itemSelector: '#article',
         layoutMode: 'masonry',
         masonry: {
-            columnWidth: '#ad'
+            columnWidth: '#article'
         }
     });
     $containerRight.isotope({
-        itemSelector: '.ad',
+        itemSelector: '.article',
         layoutMode: 'masonry',
         masonry: {
-            columnWidth: '.ad'
+            columnWidth: '.article'
         }
     });
+}
+$(document).ready(function() {
+    initIsotope();
 });
-
+$(window).resize(function() {
+    initIsotope();
+});
 
 $(function() {
       var obj = $("html");

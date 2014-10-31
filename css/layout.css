@@ -138,7 +138,7 @@
 .grid .intro h3 {
    letter-spacing: .1em;
 }
-.page-home .adverts .ad .ad-details {
+.page-home .items .article .article-details {
    height: 9em;
 }
 .page-foot div .links {
@@ -311,11 +311,11 @@
    letter-spacing: .2em;
    max-width: 100%;
 }
-.page-home .adverts .ad .ad-details {
+.page-home .items .article .article-details {
     text-align: center;
     height: 13em;
 }
-.page-home .adverts .ad .ad-details h4 {
+.page-home .items .article .article-details h4 {
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 1.2;
@@ -324,13 +324,13 @@
     width: 100%;
     text-align: center;
 }
-.advert-detail h3 {
+.item-detail h3 {
    font-size: 12px;
    font-size: .75rem;
    line-height: 2;
    line-height: 1;
 }
-.advert-detail .company {
+.item-detail .company {
    font-size: 11px;
    font-size: .6875rem;
    line-height: 2.18182;
@@ -580,13 +580,13 @@ html {
    padding: 0;
    display: block;
 }
-.page-content .extend .ad {
+.page-content .extend .article {
    float: left;
    width: 25%;
    padding: 0 .3125em .3125em .3125em;
    position: relative;
 }
-.page-content .extend .ad img {
+.page-content .extend .article img {
    background-color: #e6e5e1;
 }
 .page-content .extend a:hover img {
@@ -616,7 +616,7 @@ html {
     display: inline-block;
     padding: 0 0 .3125em 0;
 }
-.page-general .actions .ad {
+.page-general .actions .article {
     float: none;
     width: 100%;
     display: inline-block;
@@ -717,13 +717,13 @@ html {
    padding: 0;
    display: block;
 }
-.page-home .extend .ad {
+.page-home .extend .article {
    float: left;
    width: 25%;
    padding: 0 .3125em .3125em .3125em;
    position: relative;
 }
-.page-home .extend .ad img {
+.page-home .extend .article img {
    background-color: #e6e5e1;
 }
 .page-home .extend a:hover img {
@@ -742,7 +742,7 @@ html {
    display: inline-block;
    padding: 0 0 .3125em 0;
 }
-.page-home .actions .ad {
+.page-home .actions .article {
    float: none;
    width: 100%;
    display: inline-block;
@@ -761,32 +761,32 @@ html {
 .page-home {
     padding: 0;
 }
-.page-home .adverts {
+.page-home .items {
    display: block;
    padding: 0;
    position: relative;
    width: 50%;
 }
-.page-home .adverts .ad {
+.page-home .items .article {
    width: 50%;
 }
-.page-home .adverts .ad img {
+.page-home .items .article img {
    padding-bottom: .625em;
    width: auto;
    display: block;
 }
-.page-home .adverts .ad .ad-details h4 {
+.page-home .items .article .article-details h4 {
     position: absolute;
     left: 0;
     bottom: .5em;
 }
-.page-home .adverts .ad .ad-details h4, .page-home .adverts .ad .ad-details p {
+.page-home .items .article .article-details h4, .page-home .items .article .article-details p {
     color: #a18e5c;
 }
-.page-home .adverts .ad-dark .ad-details h4, .page-home .adverts .ad-dark .ad-details p {
+.page-home .items .article-dark .article-details h4, .page-home .items .article-dark .article-details p {
     color: #d63737;
 }
-.page-home .adverts .ad .ad-details {
+.page-home .items .article .article-details {
     position: absolute;
     top: 50%;
     padding: 15%;
@@ -795,10 +795,10 @@ html {
     background-color: transparent;
     background-image: none;
 }
-.page-home .adverts .ad .ad-details:hover {
+.page-home .items .article .article-details:hover {
     background-color: transparent;
 }
-.page-home .adverts .ad .ad-details h4 {
+.page-home .items .article .article-details h4 {
     font-size: 14px;
     font-size: .875rem;
     line-height: 1.71429;
@@ -808,7 +808,7 @@ html {
     width: 100%;
     text-align: center;
 }
-.page-content .ad-link, .page-home .ad-link {
+.page-content .article-link, .page-home .article-link {
     display: block;
     height: 5em;
     position: absolute;
@@ -817,72 +817,72 @@ html {
     text-align: center;
     border: none;
 }
-.page-home .adverts.left {
+.page-home .items.left {
    clear: left;
    padding: 0;
    position: relative;
 }
-.page-home .adverts li {
+.page-home .items li {
    width: 50%;
 }
-.page-home .adverts .one {
+.page-home .items .one {
    position: absolute;
    top: -10.3125em;
    right: -50%;
    overflow: hidden;
    height: 10em;
 }
-.page-home .adverts .one .advert-detail {
+.page-home .items .one .item-detail {
    top: 0;
    bottom: 0;
 }
-.page-home .adverts .one .advert-detail h3 {
+.page-home .items .one .item-detail h3 {
    font-size: 13px;
    line-height: 1.84615;
    top: 42%
 }
-.page-home .adverts .one .advert-detail .company {
+.page-home .items .one .item-detail .company {
    font-size: 12px;
    line-height: 1;
    top: 57%
 }
-.page-home .adverts .one img {
+.page-home .items .one img {
    position: relative;
    top: -1em;
 }
-.page-home .adverts .two {
+.page-home .items .two {
    position: absolute;
    top: -7.625em;
    right: -100%
 }
-.page-home .adverts .two .advert-detail h3 {
+.page-home .items .two .item-detail h3 {
    font-size: 12px;
    line-height: 2;
    top: 39%
 }
-.page-home .adverts .two .advert-detail .company {
+.page-home .items .two .item-detail .company {
    font-size: 11px;
    line-height: 2.18182;
    top: 69%
 }
-.page-home .adverts .two img {
+.page-home .items .two img {
    width: 7em;
 }
-.advert-detail h3 {
+.item-detail h3 {
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
    line-height: 1;
    margin-top: -10px;
 }
-.advert-detail .company {
+.item-detail .company {
    font-size: 13px;
    font-size: .8125rem;
    line-height: 1.84615;
    line-height: 1;
    margin-top: -10px;
 }
-.page-content .sponsors-gold .ad-link, .page-home .sponsors-gold .ad-link {
+.page-content .sponsors-gold .article-link, .page-home .sponsors-gold .article-link {
    position: absolute;
    top: 0;
    bottom: 0;
@@ -890,7 +890,7 @@ html {
    padding: 10%;
    text-align: center;
 }
-.page-content .sponsors-gold .ad-link h5, .page-home .sponsors-gold .ad-link h5 {
+.page-content .sponsors-gold .article-link h5, .page-home .sponsors-gold .article-link h5 {
    font-family: "proxima-nova", sans-serif;
    font-size: 13px;
    font-size: .8125rem;
@@ -1029,7 +1029,8 @@ html {
    margin-bottom: .625em;
 }
 .page-general .advisors li img {
-   width: 30%}
+   width: 30%
+}
 .page-general .advisors li .detail {
    left: 34%;
    margin-top: -15px;
@@ -1100,67 +1101,67 @@ html {
    letter-spacing: .1em;
    margin-top: 1em;
 }
-.page-home .adverts .two .advert-detail h3 {
+.page-home .items .two .item-detail h3 {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1;
    top: 39%}
-.page-home .adverts .two .advert-detail .company {
+.page-home .items .two .item-detail .company {
    font-size: 14px;
    font-size: .875rem;
    line-height: 1.71429;
    line-height: 1;
    top: 69%}
-.page-home .adverts .one .advert-detail {
+.page-home .items .one .item-detail {
    top: 0;
    bottom: 0;
 }
-.page-home .adverts .one .advert-detail h3 {
+.page-home .items .one .item-detail h3 {
    font-size: 17px;
    font-size: 1.0625rem;
    line-height: 1.41176;
    line-height: 1;
    top: 42%}
-.page-home .adverts .one .advert-detail .company {
+.page-home .items .one .item-detail .company {
    font-size: 16px;
    font-size: 1rem;
    line-height: 1.5;
    line-height: 1;
    top: 57%}
-.advert-detail h3 {
+.item-detail h3 {
    font-size: 20px;
    font-size: 1.25rem;
    line-height: 1.2;
    line-height: 1;
    margin-top: -10px;
 }
-.advert-detail .company {
+.item-detail .company {
    font-size: 19px;
    font-size: 1.1875rem;
    line-height: 1.26316;
    line-height: 1;
    margin-top: -10px;
 }
-.page-home .adverts .ad .ad-details h4 {
+.page-home .items .article .article-details h4 {
    font-size: 22px;
    font-size: 1.375rem;
    line-height: 1.09091;
    line-height: 1.3em;
 }
-.page-home .adverts .ad .ad-details p {
+.page-home .items .article .article-details p {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1.5em;
 }
-.page-content .ad-link h5, .page-home .ad-link h5 {
+.page-content .article-link h5, .page-home .article-link h5 {
    font-size: 18px;
    font-size: 1.125rem;
    line-height: 1.33333;
    line-height: 1.4em;
 }
-.page-content .sponsors-gold .ad-link h5, .page-home .sponsors-gold .ad-link h5 {
+.page-content .sponsors-gold .article-link h5, .page-home .sponsors-gold .article-link h5 {
    font-size: 18px;
    font-size: 1.125rem;
    line-height: 1.33333;
@@ -1229,53 +1230,53 @@ html {
    line-height: 1.3em;
    margin-top: 1em;
 }
-.page-home .adverts .ad .ad-details {
+.page-home .items .article .article-details {
    padding: 2em;
 }
-.page-home .adverts .ad .ad-details h4 {
+.page-home .items .article .article-details h4 {
    font-size: 25px;
    font-size: 1.5625rem;
    line-height: 1.92;
    line-height: 1.3em;
 }
-.page-home .adverts .ad .ad-details p {
+.page-home .items .article .article-details p {
    font-size: 19px;
    font-size: 1.1875rem;
    line-height: 1.26316;
    line-height: 1.5em;
 }
-.page-home .ad-link h5 {
+.page-home .article-link h5 {
    font-size: 24px;
    font-size: 1.5rem;
    line-height: 1;
    line-height: 1.4em;
 }
-.page-home .adverts .two .advert-detail h3 {
+.page-home .items .two .item-detail h3 {
    font-size: 16px;
    font-size: 1rem;
    line-height: 1.5;
    line-height: 1;
    top: 45%
 }
-.page-home .adverts .two .advert-detail .company {
+.page-home .items .two .item-detail .company {
    font-size: 15px;
    font-size: .9375rem;
    line-height: 1.6;
    line-height: 1;
    top: 65%
 }
-.page-home .adverts .one .advert-detail {
+.page-home .items .one .item-detail {
    top: 0;
    bottom: 0;
 }
-.page-home .adverts .one .advert-detail h3 {
+.page-home .items .one .item-detail h3 {
    font-size: 19px;
    font-size: 1.1875rem;
    line-height: 1.26316;
    line-height: 1;
    top: 43%
 }
-.page-home .adverts .one .advert-detail .company {
+.page-home .items .one .item-detail .company {
    font-size: 18px;
    font-size: 1.125rem;
    line-height: 1.33333;
