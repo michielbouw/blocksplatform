@@ -20,9 +20,18 @@ function initIsotope() {
 }
 $(document).ready(function() {
     initIsotope();
+    //$containerLeft.isotope('layout');
+    //$containerRight.isotope('layout');
+});
+$(window).load(function() {
+    //initIsotope();
+    $containerLeft.isotope('layout');
+    $containerRight.isotope('layout');
 });
 $(window).resize(function() {
-    initIsotope();
+    //initIsotope();
+    $containerLeft.isotope('layout');
+    $containerRight.isotope('layout');
 });
 
 $(function() {

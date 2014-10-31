@@ -59,6 +59,13 @@
    background-position: center;
    background-size: 100% auto;
 }
+
+.page-home .icon img {
+   background-image: url("../svg/brain.svg");
+   background-repeat: no-repeat;
+   background-size: auto auto;
+}
+
 .page-head .nav-menu {
    background-image: url("../svg/menu.svg");
    background-repeat: no-repeat;
@@ -88,17 +95,6 @@
    background-image: url("../svg/close.svg");
    background-repeat: no-repeat;
    background-position: 50% 50%;
-   background-size: auto auto;
-   -webkit-background-origin: content-box;
-   -moz-background-origin: content-box;
-   -ms-background-origin: content-box;
-   -o-background-origin: content-box;
-   background-origin: content-box
-}
-.testimonial img {
-   background-image: url("../svg/quote.svg");
-   background-repeat: no-repeat;
-   background-position: 0 0;
    background-size: auto auto;
    -webkit-background-origin: content-box;
    -moz-background-origin: content-box;
