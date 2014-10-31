@@ -1,3 +1,6 @@
+// social post facebook
+//$('.items.left').SocialPost({ Count: '4', UID: '226213847556371' });
+
 // isotope settings
 var $containerLeft = $('.items.left');
 var $containerRight = $('.items.right');
@@ -18,6 +21,7 @@ function initIsotope() {
         }
     });
 }
+
 $(document).ready(function() {
     initIsotope();
     //$containerLeft.isotope('layout');

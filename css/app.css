@@ -583,6 +583,7 @@ canvas {
 }
 .page-content .article-link, .page-home .article-link {
     display: block;
+    font-size: 1.1875rem;
     height: 10em;
     position: relative;
     width: 100%;
