@@ -1,15 +1,3 @@
-
-<!-- saved from url=(0058)https://futureofwebdesign.com/london-2013/json/config.json -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body>{
-    "siteTitle"     : "Future of Web Design 2013",
-    "path"          : "/london-2013",
-    "assetsPath"    : "/london-2013/public",
-    "contactEmail"  : "hello@futureinsights.com",
-    "venueLat"      : "51.52076",
-    "venueLng"      : "-0.0916",
-    "mailchimpURL"  : "http://futureinsights.us5.list-manage.com/subscribe?u=d95ebf4436bdbe15b64a26083&amp;id=f9eddcca96",
-    "indexJSON"     : "/london-2013/json/index.json",
-    "timeZone"      : "Europe/London",
-    "amiandoURL"    : "https://www.amiando.com/FOWDlondon2013.html?viewType=iframe&amp;distributionChannel=CHANNEL_IFRAME&amp;panelId=1827491&amp;useDefaults=false&amp;resizeIFrame=true",
-    "gaID"          : "UA-26280113-4"
-}</body></html>
+{
+  "facebookUID": "226213847556371"
+}

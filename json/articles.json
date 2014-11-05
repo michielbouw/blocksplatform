@@ -1,0 +1,100 @@
+{
+  "articlesleft": [
+    {"type": 1,
+      "title": "Title",
+      "text": "Real web designers write code. Always have, always will. Jeffrey Zeldman, zeldman.com",
+      "link": "http:\/\/zeldman.com",
+      "date": "2014-10-30T16:14:23+0000"},
+
+    {"type": 2,
+      "title": "Title",
+      "text": "Subtitle",
+      "image": "images\/speakerjoe.jpg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-20T16:14:23+0000"},
+
+    {"type": 2,
+      "title": "Title",
+      "text": "Subtitle",
+      "image": "images\/4.jpg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-19T16:14:23+0000"},
+
+    {"type": 2,
+      "title": "Title",
+      "text": "Subtitle",
+      "image": "images\/speakerjoe.jpg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-17T16:14:23+0000"},
+
+    {"type": 2,
+      "title": "Title",
+      "text": "Subtitle",
+      "image": "images\/4.jpg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-16T16:14:23+0000"},
+
+    {"type": 3,
+      "title": "HTML5 and CSS3",
+      "text": "Covering all the hottest topics. Future of web design will keep you right up to date with the latest technologies and techniques.",
+      "image": "images\/html.png",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-15T16:14:23+0000"},
+
+    {"type": 3,
+      "title": "Wordpress CMS",
+      "text": "WordPress CMS is your personal admin environment to simply change your website items and pages.",
+      "image": "images\/WP.jpg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-14T16:14:23+0000"},
+
+    {"type": 3,
+      "title": "Responsive web design",
+      "text": "Everything is readable and usable on every type of device. On your PC, your Mac and your phone.",
+      "image": "images\/responsive.png",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-13T16:14:23+0000"},
+
+    {"type": 1,
+      "title": "Title",
+      "text": "Real web designers write code. Always have, always will. Jeffrey Zeldman, zeldman.com",
+      "link": "http:\/\/zeldman.com",
+      "date": "2014-09-30T16:14:23+0000"}
+  ],
+  "articlesright": [
+    {"type": 4,
+      "title": "MPBèta",
+      "text": "A company for webdesign and webdevelopment. MPBèta connects the newest and best options all together.",
+      "image": "svg\/hand-picked-speakers.svg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-19T16:14:23+0000"},
+
+    {"type": 4,
+      "title": "Responsive web design",
+      "text": "Everything is readable and usable on every type of device. On your PC, your Mac and your phone.",
+      "image": "images\/responsive.png",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-16T16:14:23+0000"},
+
+    {"type": 3,
+      "title": "HTML5 and CSS3",
+      "text": "Covering all the hottest topics. Future of web design will keep you right up to date with the latest technologies and techniques.",
+      "image": "images\/html.png",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-15T16:14:23+0000"},
+
+    {"type": 3,
+      "title": "Wordpress CMS",
+      "text": "WordPress CMS is your personal admin environment to simply change your website items and pages.",
+      "image": "images\/WP.jpg",
+      "link": "http:\/\/mpbeta.nl",
+      "date": "2014-10-14T16:14:23+0000"},
+
+    {"type": 1,
+      "title": "Title",
+      "text": "Real web designers write code. Always have, always will. Jeffrey Zeldman, zeldman.com",
+      "link": "http:\/\/zeldman.com",
+      "date": "2014-09-30T16:14:23+0000"}
+
+  ]
+}

@@ -515,13 +515,17 @@ canvas {
     position: relative;
     float: left;
 }
-.page-home .items .article {
+.page-home .items #article {
    width: 100%;
    padding: .3125em;
    float: left;
    color: #d63737;
    display: inline-block;
    position: relative;
+   cursor: pointer;
+}
+.page-home .items .article {
+   width: 100%;
 }
 .page-home .items .article img {
    display: none;
@@ -591,6 +595,7 @@ canvas {
     padding-top: 15px;
     text-align: center;
     border: 1px solid #e6e5e1;
+    color: #d63737;
 }
 .page-content .article-link h5, .page-home .article-link h5 {
     font-family: "proxima-nova", sans-serif;
@@ -609,13 +614,10 @@ canvas {
     display: none
 }
 .page-home .items li {
-    width: 100%;
     display: inline-block;
     position: relative;
-    cursor: pointer;
-    float: left;
     list-style: none;
-    padding: .3125em;
+    width: 100%;
 }
 .page-home .items li:hover .item-detail {
     display: block;

@@ -14,23 +14,23 @@ function initIsotope() {
         }
     });
     $containerRight.isotope({
-        itemSelector: '.article',
+        itemSelector: '#article',
         layoutMode: 'masonry',
         masonry: {
-            columnWidth: '.article'
+            columnWidth: '#article'
         }
     });
 }
 
 $(document).ready(function() {
-    initIsotope();
+    //initIsotope();
     //$containerLeft.isotope('layout');
     //$containerRight.isotope('layout');
 });
 $(window).load(function() {
-    //initIsotope();
-    $containerLeft.isotope('layout');
-    $containerRight.isotope('layout');
+    initIsotope();
+    //$containerLeft.isotope('layout');
+    //$containerRight.isotope('layout');
 });
 $(window).resize(function() {
     //initIsotope();

@@ -764,7 +764,7 @@ html {
    position: relative;
    width: 50%;
 }
-.page-home .items .article {
+.page-home .items #article {
    width: 50%;
 }
 .page-home .items .article img {
@@ -818,9 +818,6 @@ html {
    clear: left;
    padding: 0;
    position: relative;
-}
-.page-home .items li {
-   width: 50%;
 }
 .page-home .items .one {
    position: absolute;
