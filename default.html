@@ -84,7 +84,7 @@
             </div>
 
             <div class="grid-item items right" ng-controller="articles-right">
-                <div ng-repeat="a in articles" id="article">
+                <div ng-repeat="a in articlesright" id="article">
                     <a href="{{ a.link }}" target="_blank" class="article article-small" ng-if="a.type == 1">
                         <span class="article-link"><h5>{{ a.title }}</h5><p>{{ a.text }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></p></span>
                         <img src="images/320x320.gif">
@@ -100,38 +100,6 @@
                         <img src="images/320x640.gif" alt="" style="background-image: url({{ a.image }});background-position-y: 13%;">
                     </a>
                 </div>
-                <!--<a class="article article-dark" href="http://www.mpbeta.nl">
-                    <span class="article-details"><h4>MPBèta</h4><p>A company for webdesign and webdevelopment. MPBèta connects the newest and best options all together.</p></span>
-                    <img src="images/320x640.gif" alt="" style="background-image: url('svg/hand-picked-speakers.svg'); ">
-                </a>
-                <a class="article article-dark" href="http://apple.com">
-                    <span class="article-details"><h4>Responsive webdesign</h4><p>Everything is readable and usable on every type of device. You PC, your Mac and your phone.</p></span>
-                    <img src="images/320x640.gif" alt="" style="background-image: url('images/responsive.png'); ">
-                </a>
-                <a class="article" href="http://apple.com">
-                    <span class="article-details"><h4>HTML5 and CSS3</h4><p>Covering all the hottest topics. Future of Web Design will keep you right up to date with the latest technologies and techniques.</p></span>
-                    <img src="images/320x640.gif" alt="" style="background-image: url('images/html.png');">
-                </a>
-                <a href="/" class="article article-small">
-                    <span class="article-link"><h5>Titel</h5><p>Real web designers write code. Always have, always will.</p><p>Jeffrey Zeldman, <em>zeldman.com</em></p></span>
-                    <img src="images/320x320.gif">
-                </a>
-                <a class="article" href="http://apple.com">
-                    <span class="article-details"><h4>WordPress CMS</h4><p>WordPress CMS is your personal articlemin environment to simply change your website items and pages.</p></span>
-                    <img src="images/320x640.gif" alt="" style="background-image: url('images/WP.jpg');">
-                </a>
-                <a href="/" class="article article-small">
-                    <span class="article-link"><h5>Titel</h5><p>Real web designers write code. Always have, always will.</p></span>
-                    <img src="images/320x320.gif">
-                </a>
-                <a href="/" class="article article-small">
-                    <span class="article-link"><h5>Titel</h5></span>
-                    <img src="images/320x320.gif">
-                </a>
-                <a href="/" class="article article-small">
-                    <span class="article-link"><h5>Titel</h5><p>Real web designers write code. Always have, always will.</p><p>Jeffrey Zeldman, <em>zeldman.com</em></p></span>
-                    <img src="images/320x320.gif">
-                </a>-->
             </div>
 
             <div class="grid-item extend">

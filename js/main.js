@@ -1,23 +1,20 @@
-// social post facebook
-//$('.items.left').SocialPost({ Count: '4', UID: '226213847556371' });
-
 // isotope settings
 var $containerLeft = $('.items.left');
 var $containerRight = $('.items.right');
 
 function initIsotope() {
     $containerLeft.isotope({
-        itemSelector: '#article',
+        itemSelector: '.items.left #article',
         layoutMode: 'masonry',
         masonry: {
-            columnWidth: '#article'
+            columnWidth: '.items.left #article'
         }
     });
     $containerRight.isotope({
-        itemSelector: '#article',
+        itemSelector: '.items.right #article',
         layoutMode: 'masonry',
         masonry: {
-            columnWidth: '#article'
+            columnWidth: '.items.right #article'
         }
     });
 }
