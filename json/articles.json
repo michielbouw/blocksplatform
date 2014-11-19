@@ -62,6 +62,12 @@
       "date": "2014-09-30T16:14:23+0000"}
   ],
   "articlesright": [
+    {"type": 1,
+      "title": "Web designers",
+      "text": "Real web designers write code. Always have, always will. Jeffrey Zeldman, zeldman.com",
+      "link": "http:\/\/zeldman.com",
+      "date": "2014-09-30T16:14:23+0000"},
+
     {"type": 4,
       "title": "MPBèta",
       "text": "A company for webdesign and webdevelopment. MPBèta connects the newest and best options all together.",
@@ -88,13 +94,6 @@
       "text": "WordPress CMS is your personal admin environment to simply change your website items and pages.",
       "image": "images\/WP.jpg",
       "link": "http:\/\/mpbeta.nl",
-      "date": "2014-10-14T16:14:23+0000"},
-
-    {"type": 1,
-      "title": "Title",
-      "text": "Real web designers write code. Always have, always will. Jeffrey Zeldman, zeldman.com",
-      "link": "http:\/\/zeldman.com",
-      "date": "2014-09-30T16:14:23+0000"}
-
+      "date": "2014-10-14T16:14:23+0000"}
   ]
 }

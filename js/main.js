@@ -1,8 +1,5 @@
-// isotope settings
-var $containerLeft = $('.items.left');
-var $containerRight = $('.items.right');
-
 function initIsotope() {
+    var $containerLeft = $('.items.left');
     $containerLeft.isotope({
         itemSelector: '.items.left #article',
         layoutMode: 'masonry',
@@ -10,6 +7,8 @@ function initIsotope() {
             columnWidth: '.items.left #article'
         }
     });
+    $containerLeft.imagesLoaded().progress( function() { $containerLeft.isotope('layout'); });
+    var $containerRight = $('.items.right');
     $containerRight.isotope({
         itemSelector: '.items.right #article',
         layoutMode: 'masonry',
@@ -17,58 +16,71 @@ function initIsotope() {
             columnWidth: '.items.right #article'
         }
     });
+    $containerRight.imagesLoaded().progress( function() { $containerRight.isotope('layout'); });
 }
 
 $(document).ready(function() {
+// isotope settings
     //initIsotope();
+    //var $containerLeft = $('.items.left');
+    //var $containerRight = $('.items.right');
     //$containerLeft.isotope('layout');
     //$containerRight.isotope('layout');
 });
 $(window).load(function() {
+// isotope settings
     initIsotope();
+    //var $containerLeft = $('.items.left');
+    //var $containerRight = $('.items.right');
     //$containerLeft.isotope('layout');
     //$containerRight.isotope('layout');
 });
 $(window).resize(function() {
+// isotope settings
     //initIsotope();
+    var $containerLeft = $('.items.left');
+    var $containerRight = $('.items.right');
     $containerLeft.isotope('layout');
     $containerRight.isotope('layout');
 });
 
-$(function() {
-      var obj = $("html");
-      $(".menu-open").on("click", function () {
-         if (obj.hasClass("js-menu-open")) {
-            obj.removeClass("js-menu-open");
-         } else {
-            obj.addClass("js-menu-open");
-         }
-      });
-});
-
-/*	
-* FitText.js 1.1
-*
-* Copyright 2011, Dave Rupert http://daverupert.com
-* Released under the WTFPL license 
-* http://sam.zoy.org/wtfpl/
-*
-* Date: Thu May 05 14:23:00 2011 -0600
-*/
 (function ($) {
-   $.fn.fitText = function (kompressor, options) {
-      var compressor = kompressor || 1,
-       settings = $.extend({
-            minFontSize: Number.NEGATIVE_INFINITY,
-            maxFontSize: Number.POSITIVE_INFINITY
-         }, options);
-      return this.each(function () {
-         var $this = $(this);
-         var resizer = function () {
-            $this.css("font-size", Math.max(Math.min($this.width() / (compressor * 10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)))
-         };
-         resizer();
-         $(window).on("resize", resizer)
-      })
-   }
+    /*
+     Mobile menu
+     */
+    var obj = $("html");
+    $(".menu-open").on("click", function () {
+        if (obj.hasClass("js-menu-open")) {
+            obj.removeClass("js-menu-open");
+        } else {
+            obj.addClass("js-menu-open");
+        }
+    });
+})(jQuery);
+
+/*
+ * FitText.js 1.1
+ *
+ * Copyright 2011, Dave Rupert http://daverupert.com
+ * Released under the WTFPL license
+ * http://sam.zoy.org/wtfpl/
+ *
+ * Date: Thu May 05 14:23:00 2011 -0600
+ */
+(function ($) {
+    $.fn.fitText = function (kompressor, options) {
+        var compressor = kompressor || 1,
+            settings = $.extend({
+                minFontSize: Number.NEGATIVE_INFINITY,
+                maxFontSize: Number.POSITIVE_INFINITY
+            }, options);
+        return this.each(function () {
+            var $this = $(this);
+            var resizer = function () {
+                $this.css("font-size", Math.max(Math.min($this.width() / (compressor * 10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)))
+            };
+            resizer();
+            $(window).on("resize", resizer)
+        })
+    }
 })(jQuery);

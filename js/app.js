@@ -1,20 +1,31 @@
 // app JS structure
 angular.module('home', ['truncate'])
+    .directive('homeitems', function() {
+        return {
+            templateUrl: 'content-home-items.html'
+        };
+    })
 
-    .controller('articles-left', ['$scope', '$http', function ($scope, $http) {
+    .service('Isotope', function(){
+        this.init = function(container) {
+            initIsotope();
+        };
+        this.append = function(container, elem) {
+            var $containerLeft = $('.items.left');
+            var $containerRight = $('.items.right');
+            $containerLeft.isotope()
+                .append( elem )
+                .isotope( 'appended', elem )
+                .isotope('layout');
+            $containerRight.isotope()
+                .append( elem )
+                .isotope( 'appended', elem )
+                .isotope('layout');
+        }
+    })
+
+    .controller('articles', ['$scope', '$http', function ($scope, $http) {
         $scope.articles = {};
-        $scope.count = '5';
-        $scope.UID = '';
-
-        $http({
-            // get data from config.json
-            method: 'GET',
-            url: 'json/config.json'
-        })
-            .success(function (data, status, headers, config) {
-                // assigning to model
-                $scope.UID = data.facebookUID;
-            });
 
         $http({
             // get data from facebook
@@ -28,29 +39,8 @@ angular.module('home', ['truncate'])
                     item.title = item.from.name;
                     item.date = item.created_time;
 
-                    if ( (item.picture.indexOf("https://fbcdn-sphotos-c-a.akamaihd.net")) != -1 ) {
-                        var picture = item.picture;
-                        if ( (item.picture.indexOf("hphotos-ak-xpf1/v/t1.0-9/s130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-ak-xpf1/v/t1.0-9/s130x130','hphotos-ak-xfa1/t31.0-8/s720x720');
-                        } else if ( (item.picture.indexOf("hphotos-xpf1/v/t1.0-9/s130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-xpf1/v/t1.0-9/s130x130', 'hphotos-xpa1/t31.0-8/s720x720');
-                        } else if ( (item.picture.indexOf("hphotos-xap1/v/t1.0-9/p130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-xap1/v/t1.0-9/p130x130','hphotos-xfa1/t31.0-8/s720x720');
-                        } else if ( (item.picture.indexOf("hphotos-xpa1/v/t1.0-9/s130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-xpa1/v/t1.0-9/s130x130','hphotos-xaf1/t31.0-8/s720x720');
-                        }
-                    }
-                    else if ( (item.picture.indexOf("https://scontent-a.xx.fbcdn.net")) != -1 ) {
-                        var picture = item.picture;
-                        if ( (item.picture.indexOf("hphotos-ak-xpf1/v/t1.0-9/s130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-ak-xpf1/v/t1.0-9/s130x130','hphotos-ak-xfa1/t31.0-8/s720x720');
-                        } else if ( (item.picture.indexOf("hphotos-xpf1/v/t1.0-9/s130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-xpf1/v/t1.0-9/s130x130', 'hphotos-xpa1/t31.0-8/s720x720');
-                        } else if ( (item.picture.indexOf("hphotos-xap1/v/t1.0-9/p130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-xap1/v/t1.0-9/p130x130','hphotos-xfa1/t31.0-8/s720x720');
-                        } else if ( (item.picture.indexOf("hphotos-xpa1/v/t1.0-9/s130x130")) != -1 ) {
-                            item.image = picture.replace('hphotos-xpa1/v/t1.0-9/s130x130','hphotos-xaf1/t31.0-8/s720x720');
-                        }
+                    if ( item.object_id ) {
+                        item.image = "https://graph.facebook.com/" + item.object_id + "/picture";
                     }
                     else if ( (item.picture.indexOf("https://fbexternal-a.akamaihd.net/")) != -1 ) {
                         if ( (item.picture.indexOf("http%3A%2F%2F")) != -1 ) {
@@ -60,9 +50,8 @@ angular.module('home', ['truncate'])
                             var index = item.picture.indexOf("https%3A%2F%2F");
                             item.image = item.picture.substr(index).replace('%3A%2F%2F','://').replace('%2F', '/');
                         }
-                    }
-                    else {
-                        item.image = item.picture;
+                    } else {
+                        item.image = "";
                     }
 
                     if (item.message) {
@@ -89,24 +78,8 @@ angular.module('home', ['truncate'])
                 });
             });
 
-        $http({
-            // get data from articles.json
-            method: 'GET',
-            url: 'json/articles.json'
-        })
-            .success(function (data, status, headers, config) {
-
-            });
-
         $scope.orderProp = 'date';
 
-        $scope.initIsotope = function() {
-            $timeout(function() { initIsotope();});
-        };
-
-    }])
-
-    .controller('articles-right', ['$scope', '$http', function ($scope, $http) {
         $scope.articlesright = {};
 
         $http({
@@ -116,17 +89,13 @@ angular.module('home', ['truncate'])
         })
             .success(function (data, status, headers, config) {
                 $scope.articlesright = data.articlesright;
-            })
-            .error(function (data, status, headers, config) {
-                // something went wrong
             });
 
-        $scope.initIsotope = function() {
-            $timeout(function() { initIsotope();});
-        };
+        $scope.$on('$viewContentLoaded', function() {
+            initIsotope();
+        });
 
     }]);
-
 
 
 

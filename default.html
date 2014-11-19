@@ -61,46 +61,7 @@
                 </div>
             </div>
 
-            <div class="grid-item items left" ng-controller="articles-left">
-                <div ng-repeat="a in articles | orderBy:orderProp:1" id="article">
-                    <a href="{{ a.link }}" target="_blank" class="article article-small" ng-if="a.type == 1">
-                        <span class="article-link"><h5>{{ a.title }}</h5><p>{{ a.text | characters:190 }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></p></span>
-                        <img src="images/320x320.gif">
-                    </a>
-
-                    <li class="flip" ng-if="a.type == 2"><a href="{{ a.link }}" target="_blank">
-                        <div class="item-detail">
-                            <h3>{{ a.title }}</h3>
-                            <span class="company">{{ a.text | characters:190 }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></span>
-                        </div>
-                        <img src="images/320x320.gif" class="animated flipIn" style="background-image: url({{ a.image }});background-size:100% auto;background-repeat:no-repeat;background-position: 50%;"></a></li>
-                    </a></li>
-
-                    <a href="{{ a.link }}" target="_blank" class="article" ng-if="a.type == 3">
-                        <span class="article-details"><h4>{{ a.title }}</h4><p>{{ a.text | characters:190 }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></p></span>
-                        <img src="images/320x640.gif" alt="" style="background-image: url({{ a.image }});background-position-y: 13%;">
-                    </a>
-                </div>
-            </div>
-
-            <div class="grid-item items right" ng-controller="articles-right">
-                <div ng-repeat="a in articlesright" id="article">
-                    <a href="{{ a.link }}" target="_blank" class="article article-small" ng-if="a.type == 1">
-                        <span class="article-link"><h5>{{ a.title }}</h5><p>{{ a.text }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></p></span>
-                        <img src="images/320x320.gif">
-                    </a>
-
-                    <a href="{{ a.link }}" target="_blank" class="article" ng-if="a.type == 3">
-                        <span class="article-details"><h4>{{ a.title }}</h4><p>{{ a.text }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></p></span>
-                        <img src="images/320x640.gif" alt="" style="background-image: url({{ a.image }});background-position-y: 13%;">
-                    </a>
-
-                    <a href="{{ a.link }}" target="_blank" class="article article-dark" ng-if="a.type == 4">
-                        <span class="article-details"><h4>{{ a.title }}</h4><p>{{ a.text }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></p></span>
-                        <img src="images/320x640.gif" alt="" style="background-image: url({{ a.image }});background-position-y: 13%;">
-                    </a>
-                </div>
-            </div>
+            <div homeitems ng-controller="articles"></div>
 
             <div class="grid-item extend">
                 <div class="grid-item actions">
