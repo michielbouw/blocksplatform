@@ -1,13 +1,4 @@
 function initIsotope() {
-    var $containerLeft = $('.items.left');
-    $containerLeft.isotope({
-        itemSelector: '.items.left #article',
-        layoutMode: 'masonry',
-        masonry: {
-            columnWidth: '.items.left #article'
-        }
-    });
-    $containerLeft.imagesLoaded().progress( function() { $containerLeft.isotope('layout'); });
     var $containerRight = $('.items.right');
     $containerRight.isotope({
         itemSelector: '.items.right #article',
@@ -16,20 +7,38 @@ function initIsotope() {
             columnWidth: '.items.right #article'
         }
     });
-    $containerRight.imagesLoaded().progress( function() { $containerRight.isotope('layout'); });
+    $containerRight.isotope('layout');
+
+    var $containerLeft = $('.items.left');
+    $containerLeft.isotope({
+        itemSelector: '.items.left #article',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: '.items.left #article'
+        }
+    });
+    $containerLeft.isotope('layout');
 }
 
 $(document).ready(function() {
 // isotope settings
-    //initIsotope();
-    //var $containerLeft = $('.items.left');
-    //var $containerRight = $('.items.right');
-    //$containerLeft.isotope('layout');
-    //$containerRight.isotope('layout');
+    initIsotope();
 });
 $(window).load(function() {
 // isotope settings
     initIsotope();
+    $('.page-content').imagesLoaded().progress( function(container, elem) {
+        var $containerLeft = $('.items.left');
+        var $containerRight = $('.items.right');
+        $containerLeft.isotope()
+            .append( elem )
+            .isotope( 'appended', elem )
+            .isotope('layout');
+        $containerRight.isotope()
+            .append( elem )
+            .isotope( 'appended', elem )
+            .isotope('layout');
+    });
     //var $containerLeft = $('.items.left');
     //var $containerRight = $('.items.right');
     //$containerLeft.isotope('layout');
@@ -37,7 +46,6 @@ $(window).load(function() {
 });
 $(window).resize(function() {
 // isotope settings
-    //initIsotope();
     var $containerLeft = $('.items.left');
     var $containerRight = $('.items.right');
     $containerLeft.isotope('layout');

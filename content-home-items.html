@@ -5,12 +5,12 @@
                         <img src="images/320x320.gif">
                     </a>
 
-                    <li class="flip" ng-if="a.type == 2"><a href="{{ a.link }}" target="_blank">
+                    <li ng-if="a.type == 2"><a href="{{ a.link }}" target="_blank">
                         <div class="item-detail">
                             <h3>{{ a.title }}</h3>
                             <span class="company">{{ a.text | characters:190 }}<br><small>{{ a.date | date:'dd-MM-yyyy' }}</small></span>
                         </div>
-                        <img src="images/320x320.gif" class="animated flipIn" style="background-image: url({{ a.image }});background-size:100% auto;background-repeat:no-repeat;background-position: 50%;"></a></li>
+                        <img src="images/320x320.gif" style="background-image: url({{ a.image }});background-size:100% auto;background-repeat:no-repeat;background-position: 50%;"></a></li>
                     </a></li>
 
                     <a href="{{ a.link }}" target="_blank" class="article" ng-if="a.type == 3">

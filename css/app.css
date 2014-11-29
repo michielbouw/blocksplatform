@@ -202,11 +202,11 @@ html,body {
    background-color: #fff;
 }
 .wrapper {
-   -webkit-transition: all .25s ease;
-   -moz-transition: all .25s ease;
-   -ms-transition: all .25s ease;
-   -o-transition: all .25s ease;
-   transition: all .25s ease;
+   -webkit-transition: all .2s ease;
+   -moz-transition: all .2s ease;
+   -ms-transition: all .2s ease;
+   -o-transition: all .2s ease;
+   transition: all .2s ease;
    -webkit-box-shadow: -3px 0 10px rgba(0,0,0,0.8);
    -moz-box-shadow: -3px 0 10px rgba(0,0,0,0.8);
    -ms-box-shadow: -3px 0 10px rgba(0,0,0,0.8);
@@ -801,11 +801,11 @@ canvas {
    -ms-animation-fill-mode: both;
    -o-animation-fill-mode: both;
    animation-fill-mode: both;
-   -webkit-animation-duration: 1.3s;
-   -moz-animation-duration: 1.3s;
-   -ms-animation-duration: 1.3s;
-   -o-animation-duration: 1.3s;
-   animation-duration: 1.3s
+   -webkit-animation-duration: 0.8s;
+   -moz-animation-duration: 0.8s;
+   -ms-animation-duration: 0.8;
+   -o-animation-duration: 0.8s;
+   animation-duration: 0.8s
 }
 .out {
    -webkit-animation-duration: .3s;
