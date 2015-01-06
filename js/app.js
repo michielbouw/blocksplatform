@@ -2,7 +2,30 @@
 angular.module('home', ['truncate'])
     .directive('homeitems', function() {
         return {
-            templateUrl: 'content-home-items.html'
+            templateUrl: 'content-home-items.html',
+            link: function(scope, element, attrs) {
+                angular.element(document).ready(function() {
+                    var $containerRight = $('.items.right');
+                    $containerRight.isotope({
+                        itemSelector: '.items.right #article',
+                        layoutMode: 'masonry',
+                        masonry: {
+                            columnWidth: '.items.right #article'
+                        }
+                    });
+                    $containerRight.isotope('layout');
+
+                    var $containerLeft = $('.items.left');
+                    $containerLeft.isotope({
+                        itemSelector: '.items.left #article',
+                        layoutMode: 'masonry',
+                        masonry: {
+                            columnWidth: '.items.left #article'
+                        }
+                    });
+                    $containerLeft.isotope('layout');
+                });
+            }
         };
     })
 

@@ -22,7 +22,7 @@ function initIsotope() {
 
 $(document).ready(function() {
 // isotope settings
-    initIsotope();
+    //initIsotope();
 });
 $(window).load(function() {
 // isotope settings
